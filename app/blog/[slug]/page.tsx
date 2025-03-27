@@ -349,8 +349,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <div className="pt-24 pb-20 relative overflow-hidden">
       {/* Decorative Elements */}
-      <AnimatedBlob color="#A8E6CF" size="400px" top="-200px" left="-200px" />
-      <AnimatedBlob color="#D6C1FF" size="350px" bottom="-150px" right="-150px" delay={2} />
+      <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+      <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">

@@ -9,13 +9,14 @@ import TextReveal from "@/components/text-reveal"
 import TestimonialSlider from "@/components/testimonial-slider"
 import AnimatedBlob from "@/components/animated-blob"
 
+
 export default function Home() {
   return (
     <>
       {}
       <ParallaxSection
         bgImage="/placeholder.svg?height=1080&width=1920"
-        overlayColor="rgba(0, 0, 0, 0.3)"
+        overlayColor="rgba(64, 62, 62, 0.3)"
         className="animated-bg"
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center">
@@ -62,54 +63,54 @@ export default function Home() {
       {}
       <section className="py-24 bg-white relative overflow-hidden">
         {}
-        <AnimatedBlob color="#A8E6CF" size="400px" top="-200px" left="-200px" />
-        <AnimatedBlob color="#D6C1FF" size="350px" bottom="-150px" right="-150px" delay={2} />
+        <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+        <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 ">
           <TextReveal>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
               Why Choose <span className="gradient-text">Reccova</span> Home Physiotherapy?
             </h2>
           </TextReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
             <TextReveal delay={0.1}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-mint/20 p-4 rounded-full inline-flex mb-6">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+                <div className="bg-gradient-to-br from-reccova-green/30 to-reccova-mint/30 p-4 rounded-full inline-flex mb-6">
                   <Activity className="h-8 w-8 text-reccova-green" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Personalized Care</h3>
-                <p className="text-gray-600">Treatment plans tailored to your specific needs and recovery goals.</p>
+                <h3 className="text-xl font-semibold mb-4 text-black">Personalized Care</h3>
+                <p className="text-gray-900">Treatment plans tailored to your specific needs and recovery goals.</p>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.2}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-violet/20 to-reccova-pink/20 p-4 rounded-full inline-flex mb-6">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+                <div className="bg-gradient-to-br from-reccova-violet/30 to-reccova-pink/30 p-4 rounded-full inline-flex mb-6">
                   <Heart className="h-8 w-8 text-reccova-violet" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Comfort & Convenience</h3>
-                <p className="text-gray-600">Receive expert care in the comfort and privacy of your own home.</p>
+                <h3 className="text-xl font-semibold mb-3 text-balck text-black">Comfort & Convenience</h3>
+                <p className="text-gray-900">Receive expert care in the comfort and privacy of your own home.</p>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.3}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-pink/20 to-reccova-violet/20 p-4 rounded-full inline-flex mb-6">
                   <Clock className="h-8 w-8 text-reccova-pink" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Flexible Scheduling</h3>
-                <p className="text-gray-600">Book appointments at times that work for your busy lifestyle.</p>
+                <h3 className="text-xl font-semibold mb-3 text-black">Flexible Scheduling</h3>
+                <p className="text-gray-900">Book appointments at times that work for your busy lifestyle.</p>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.4}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-mint/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
                   <Award className="h-8 w-8 text-reccova-mint" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Certified Experts</h3>
-                <p className="text-gray-600">All our physiotherapists are fully certified with years of experience.</p>
+                <h3 className="text-xl font-semibold mb-3 text-black">Certified Experts</h3>
+                <p className="text-gray-900">All our physiotherapists are fully certified with years of experience.</p>
               </div>
             </TextReveal>
           </div>
@@ -143,14 +144,14 @@ export default function Home() {
               </TextReveal>
 
               <TextReveal delay={0.2}>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-900 mb-6">
                   At Reccova, we believe that healing happens best in comfortable, familiar environments. That's why
                   we've reimagined physiotherapy services by bringing them directly to your home.
                 </p>
               </TextReveal>
 
               <TextReveal delay={0.3}>
-                <p className="text-gray-600 mb-8">
+                <p className="text-gray-900 mb-8">
                   Our team of experienced physiotherapists is dedicated to providing personalized care that addresses
                   your specific needs. Whether you're recovering from surgery, managing chronic pain, or working through
                   a sports injury, we're here to support your journey to wellness.
@@ -179,7 +180,7 @@ export default function Home() {
       <section className="py-24 bg-white relative overflow-hidden">
         {}
         <AnimatedBlob color="#FDDDE6" size="350px" top="-150px" right="-150px" delay={1} />
-        <AnimatedBlob color="#A8E6CF" size="300px" bottom="-100px" left="-100px" delay={3} />
+        <AnimatedBlob color="ACE1AF" size="300px" bottom="-100px" left="-100px" delay={3} />
 
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
@@ -187,7 +188,7 @@ export default function Home() {
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16">
+            <p className="text-gray-900 text-center max-w-3xl mx-auto mb-16">
               We offer a comprehensive range of physiotherapy services tailored to meet your specific needs and
               delivered in the comfort of your home.
             </p>
@@ -207,7 +208,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">Rehabilitation Therapy</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Comprehensive rehabilitation programs for post-surgery recovery and injury management.
                   </p>
                   <Button
@@ -237,7 +238,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">Sports Injury Treatment</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Specialized care for athletes and active individuals to recover from sports-related injuries.
                   </p>
                   <Button
@@ -267,7 +268,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">Geriatric Physiotherapy</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Gentle, effective therapy designed specifically for the needs of older adults.
                   </p>
                   <Button
@@ -309,7 +310,7 @@ export default function Home() {
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+            <p className="text-gray-900 text-center max-w-3xl mx-auto mb-12">
               Don't just take our word for it. Hear from our patients who have experienced the Reccova difference.
             </p>
           </TextReveal>
@@ -372,46 +373,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto px-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 h-[85px] ">
             <TextReveal>
               <div className="text-center">
+              
                 <div className="text-4xl font-bold gradient-text mb-2">5000+</div>
-                <div className="text-gray-600">Satisfied Patients</div>
+                <div className="text-gray-900">Satisfied Patients</div>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.1}>
               <div className="text-center">
-                <div className="text-4xl font-bold gradient-text mb-2">25+</div>
-                <div className="text-gray-600">Certified Therapists</div>
+                <div className="text-4xl font-bold gradient-text mb-2">30+</div>
+                <div className="text-gray-900">Certified Therapists</div>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.2}>
               <div className="text-center">
-                <div className="text-4xl font-bold gradient-text mb-2">15+</div>
-                <div className="text-gray-600">Years of Experience</div>
+                <div className="text-4xl font-bold gradient-text mb-2">2+</div>
+                <div className="text-gray-900">Years of Experience</div>
               </div>
             </TextReveal>
 
             <TextReveal delay={0.3}>
               <div className="text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">98%</div>
-                <div className="text-gray-600">Recovery Success Rate</div>
+                <div className="text-gray-900">Recovery Success Rate</div>
               </div>
             </TextReveal>
           </div>
         </div>
       </section>
 
-      {/* Blog Preview */}
+      {}
       <section className="py-24 bg-gradient-to-br from-white via-reccova-lightGreen to-reccova-lightViolet relative overflow-hidden">
-        {/* Decorative Elements */}
+        {}
         <AnimatedBlob color="#FDDDE6" size="300px" top="-100px" right="-100px" />
-        <AnimatedBlob color="#A8E6CF" size="250px" bottom="-80px" left="-80px" delay={2} />
+        <AnimatedBlob color="ACE1AF" size="250px" bottom="-80px" left="-80px" delay={2} />
 
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
@@ -419,12 +421,12 @@ export default function Home() {
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-gray-600 text-center max-w-3xl mx-auto mb-16">
+            <p className="text-gray-900 text-center max-w-3xl mx-auto mb-16">
               Stay informed with the latest insights, tips, and advice from our expert physiotherapists.
             </p>
           </TextReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <TextReveal delay={0.2}>
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
                 <div className="h-48 overflow-hidden">
@@ -437,9 +439,9 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">May 15, 2023 • Recovery Tips</div>
+                  <div className="text-sm text-gray-700 mb-2">May 15, 2023 • Recovery Tips</div>
                   <h3 className="text-xl font-semibold mb-3">10 Essential Exercises for Post-Surgery Recovery</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Learn about the most effective exercises to speed up your recovery after surgery...
                   </p>
                   <Button
@@ -468,9 +470,9 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">April 28, 2023 • Expert Advice</div>
+                  <div className="text-sm text-gray-700 mb-2">April 28, 2023 • Expert Advice</div>
                   <h3 className="text-xl font-semibold mb-3">Understanding Chronic Pain: Causes and Management</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Our experts explain the science behind chronic pain and effective strategies...
                   </p>
                   <Button
@@ -499,9 +501,9 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-gray-500 mb-2">March 12, 2023 • Wellness</div>
+                  <div className="text-sm text-gray-700 mb-2">March 12, 2023 • Wellness</div>
                   <h3 className="text-xl font-semibold mb-3">The Benefits of Regular Stretching for All Ages</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-900 mb-4">
                     Discover how incorporating simple stretching routines into your daily life...
                   </p>
                   <Button

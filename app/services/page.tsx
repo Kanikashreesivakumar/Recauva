@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import TextReveal from "@/components/text-reveal"
 
 const services = [
+  
   {
     id: "rehabilitation",
     title: "Rehabilitation Therapy",
@@ -101,16 +102,16 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20">
-      {/* Hero Section */}
-      <section className="bg-reccova-600 text-white py-16">
-        <div className="container mx-auto px-4">
+    <div className="pt-24 pb-20 bg-gray bg-black-100">
+      {}
+      <section className="bg-reccova-900 text-white py-16 ">
+        <div className="container mx-auto px-4 ">
           <TextReveal>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Our Services</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center"><span className="gradient-text">Our Services</span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-xl max-w-3xl mx-auto text-center mb-8">
+            <p className="text-xl max-w-3xl mx-auto text-center mb-10 text-white font-bold mb-4">
               Discover our comprehensive range of physiotherapy services, all delivered in the comfort of your home by
               our expert therapists.
             </p>
@@ -118,9 +119,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services List */}
+      {}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 bg-[#EDE8DC]">
           <div className="space-y-24">
             {services.map((service, index) => (
               <div
@@ -158,11 +159,11 @@ export default function ServicesPage() {
 
                 <div className="lg:w-1/2">
                   <TextReveal>
-                    <h2 className="text-3xl font-bold mb-4 text-gray-800">{service.title}</h2>
+                    <h2 className="text-3xl font-bold mb-4 text-gray-700">{service.title}</h2>
                   </TextReveal>
 
                   <TextReveal delay={0.1}>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <p className="text-gray-700 mb-6">{service.description}</p>
                   </TextReveal>
 
                   <TextReveal delay={0.2}>
@@ -170,7 +171,7 @@ export default function ServicesPage() {
                   </TextReveal>
 
                   <TextReveal delay={0.3}>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 text-gray-700">
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-start">
                           <div className="h-6 w-6 rounded-full bg-reccova-100 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
@@ -183,14 +184,15 @@ export default function ServicesPage() {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <span className="text-gray-600">{feature}</span>
+                          <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </TextReveal>
 
                   <TextReveal delay={0.4}>
-                    <Button className="hover-glow bg-reccova-600 hover:bg-reccova-700" asChild>
+                    <Button className="hover-glow bg-reccova-1000 hover:bg-reccova-1000 bg-black text-white" asChild>
+                    
                       <Link
                         href="#"
                         onClick={(e) => {
@@ -202,8 +204,10 @@ export default function ServicesPage() {
                           )
                         }}
                       >
+                       
                         Book This Service
-                        <ArrowRight className="ml-2 h-4 w-4" />
+                        <ArrowRight className="ml-2 h-4 w-4"/>
+                        
                       </Link>
                     </Button>
                   </TextReveal>
@@ -223,7 +227,7 @@ export default function ServicesPage() {
             </TextReveal>
 
             <TextReveal delay={0.1}>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-900 mb-12 font-bold">
                 Our expert team can help determine the best treatment approach for your specific condition. Contact us
                 for a consultation or book an initial assessment.
               </p>
@@ -231,7 +235,7 @@ export default function ServicesPage() {
 
             <TextReveal delay={0.2}>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button className="hover-glow bg-reccova-600 hover:bg-reccova-700" asChild>
+                <Button className="hover-glow bg-reccova-600 hover:bg-reccova-700 font-bold bg-black text-white" asChild>
                   <Link
                     href="#"
                     onClick={(e) => {

@@ -51,13 +51,22 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @layer border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
 }
 
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-reccova-green via-reccova-violet to-reccova-pink;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-reccova-green/20 via-reccova-violet/20 to-reccova-pink/20;
+  }
+}
 
 .blob {
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -86,7 +95,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, #a8e6cf, #d6c1ff, #fddde6);
+  background: linear-gradient(45deg, #ACE1AF, #B0EBB4, #BFF6C3);
   z-index: -1;
   border-radius: calc(var(--radius) + 2px);
   animation: rotate-slow 12s linear infinite;
@@ -112,7 +121,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(90deg, #a8e6cf, #d6c1ff);
+  background: linear-gradient(90deg, #ACE1AF, #FFB4A2);
   transition: width 0.3s ease;
 }
 
@@ -194,7 +203,7 @@
   height: 200%;
   background: radial-gradient(
     circle,
-    rgba(168, 230, 207, 0.1) 0%,
+    rgba(76, 226, 171, 0.1) 0%,
     rgba(214, 193, 255, 0.1) 50%,
     rgba(253, 221, 230, 0.1) 100%
   );
@@ -221,12 +230,12 @@
 
 /* Button Styles */
 .btn-gradient {
-  background: linear-gradient(90deg, #a8e6cf, #ade8d4);
+  background: linear-gradient(90deg, #ACE1AF, #B1C29E);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(90deg, #ade8d4, #a8e6cf);
+  background: linear-gradient(90deg, #B1C29E, #ACE1AF);
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(168, 230, 207, 0.3);
 }

@@ -84,8 +84,8 @@ export default function TestimonialSlider() {
       onMouseLeave={handleMouseLeave}
     >
       {/* Decorative Elements */}
-      <AnimatedBlob color="#A8E6CF" size="300px" top="-150px" left="-150px" delay={0} />
-      <AnimatedBlob color="#D6C1FF" size="250px" bottom="-100px" right="-100px" delay={2} />
+      <AnimatedBlob color="ACE1AF" size="300px" top="-150px" left="-150px" delay={0} />
+      <AnimatedBlob color="#FFB4A2" size="250px" bottom="-100px" right="-100px" delay={2} />
 
       <div className="max-w-4xl mx-auto relative">
         <AnimatePresence mode="wait">

@@ -63,6 +63,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/tailwindcss": "^3.0.11",
     "autoprefixer": "^10.4.21",
     "install": "^0.13.0",
     "postcss": "^8.5.3",
