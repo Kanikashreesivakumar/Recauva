@@ -55,13 +55,13 @@ export default function Footer() {
                   href="/services"
                   className="text-black hover:text-black transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-violet/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-reccova-violet/10 w-2 h-2 rounded-full mr-2 "></span>
                   Services
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-black hover:text-gray-900 transition-colors flex items-center">
-                  <span className="bg-reccova-pink/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-reccova-pink/10 w-2 h-2 rounded-full mr-2 "></span>
                   Blog
                 </Link>
               </li>
@@ -91,7 +91,7 @@ export default function Footer() {
                   href="/services#rehabilitation"
                   className="text-black hover:text-gray-900 transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-pink/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-black w-2 h-2 rounded-full mr-2"></span>
                   Rehabilitation
                 </Link>
               </li>
@@ -100,7 +100,7 @@ export default function Footer() {
                   href="/services#sports-injury"
                   className="text-black hover:text-gray-900 transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-green/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-black w-2 h-2 rounded-full mr-2"></span>
                   Sports Injury
                 </Link>
               </li>
@@ -109,7 +109,7 @@ export default function Footer() {
                   href="/services#geriatric-care"
                   className="text-black hover:text-gray-900 transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-violet/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-black w-2 h-2 rounded-full mr-2"></span>
                   Geriatric Care
                 </Link>
               </li>
@@ -118,7 +118,7 @@ export default function Footer() {
                   href="/services#neurological"
                   className="text-black hover:text-gray-900 transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-pink/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-black w-2 h-2 rounded-full mr-2"></span>
                   Neurological Therapy
                 </Link>
               </li>
@@ -127,7 +127,7 @@ export default function Footer() {
                   href="/services#pediatric"
                   className="text-black hover:text-gray-900 transition-colors flex items-center"
                 >
-                  <span className="bg-reccova-green/10 w-2 h-2 rounded-full mr-2"></span>
+                  <span className="bg-black w-2 h-2 rounded-full mr-2"></span>
                   Pediatric Therapy
                 </Link>
               </li>

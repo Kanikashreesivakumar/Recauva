@@ -39,6 +39,7 @@ export default function Navigation() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Blog", href: "/blog" },
     { name: "Testimonials", href: "/testimonials" },
@@ -95,7 +96,7 @@ export default function Navigation() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          {}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -113,7 +114,7 @@ export default function Navigation() {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {}
           <button
             className="md:hidden text-gray-700 z-50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

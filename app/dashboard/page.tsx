@@ -50,7 +50,21 @@ export default function DashboardPage() {
     const fetchAppointments = async () => {
       try {
         const data = await getAppointments()
-        setAppointments(data)
+        const formattedData: Appointment[] = data.map((item: any) => ({
+          id: item.id,
+          name: item.name,
+          email: item.email,
+          phone: item.phone,
+          address: item.address,
+          serviceType: item.serviceType,
+          date: item.date,
+          time: item.time,
+          message: item.message,
+          isFirstTime: item.isFirstTime,
+          status: item.status,
+          createdAt: item.createdAt,
+        }))
+        setAppointments(formattedData)
       } catch (error) {
         console.error("Error fetching appointments:", error)
         toast({

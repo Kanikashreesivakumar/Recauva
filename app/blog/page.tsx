@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input"
 import TextReveal from "@/components/text-reveal"
 import AnimatedBlob from "@/components/animated-blob"
 
-// Sample blog data
+
 const blogPosts = [
   {
     id: "post-surgery-exercises",
@@ -106,11 +106,11 @@ export default function BlogPage() {
 
   return (
     <div className="pt-24 pb-20 relative overflow-hidden">
-      {/* Decorative Elements */}
-      <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+      {}
+      <AnimatedBlob color="#ACE1AF" size="400px" top="-200px" left="-200px" />
       <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
-      {/* Hero Section */}
+      {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -126,7 +126,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Search and Filter */}
+      {}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
@@ -160,7 +160,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Blog Posts */}
+      {}
       <section className="py-16 bg-gradient-to-br from-white via-reccova-lightGreen to-reccova-lightViolet">
         <div className="container mx-auto px-4 relative z-10">
           {filteredPosts.length > 0 ? (
@@ -242,7 +242,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter */}
+      {}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

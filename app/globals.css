@@ -188,7 +188,6 @@
   transition: opacity 300ms;
 }
 
-/* Animated Background */
 .animated-bg {
   position: relative;
   overflow: hidden;
@@ -211,7 +210,6 @@
   z-index: -1;
 }
 
-/* Floating Elements */
 .float-element {
   animation: float 6s ease-in-out infinite;
 }

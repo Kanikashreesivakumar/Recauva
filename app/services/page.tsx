@@ -223,7 +223,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Not Sure Which Service You Need?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Not Sure Which Service You Need?</h2>
             </TextReveal>
 
             <TextReveal delay={0.1}>
@@ -244,6 +244,7 @@ export default function ServicesPage() {
                     }}
                   >
                     Book an Assessment
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
 
