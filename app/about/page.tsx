@@ -238,21 +238,21 @@ export default function AboutPage() {
             </div>
           </TextReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {teamMembers.map((member, index) => (
               <TextReveal key={member.name} delay={0.1 * index}>
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover bg-[#F2EFE7]">
                   <div className="h-64 overflow-hidden">
                     <Image
-                      src={member.image || "/placeholder.svg"}
+                      src={member.image || "/back.jpeg?"}
                       alt={member.name}
                       width={400}
                       height={400}
                       className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                     />
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                  <div className="p-6 bg-[#F2EFE7]">
+                    <h3 className="text-xl font-semibold mb-1 text-black">{member.name}</h3>
                     <p className="text-reccova-violet mb-2 font-semibold lg:text:2xl">{member.role}</p>
                     <p className="text-black text-sm mb-4 font-semibold lg:text-xl">Specializes in: {member.specialty}</p>
                     <p className="text-black">{member.bio}</p>

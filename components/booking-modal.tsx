@@ -377,13 +377,13 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
 
                   {step === 3 && (
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
-                      <h3 className="font-medium text-lg text-gray-800 mb-4">Appointment Summary</h3>
+                      <h3 className="font-medium text-lg text-black mb-4">Appointment Summary</h3>
 
                       <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-violet/5 p-6 rounded-xl space-y-4">
                         <div className="flex">
                           <User className="text-reccova-green mr-3 flex-shrink-0" size={18} />
                           <div>
-                            <p className="text-sm text-gray-500">Patient</p>
+                            <p className="text-sm text-black">Patient</p>
                             <p className="font-medium">{formData.name}</p>
                           </div>
                         </div>
@@ -391,7 +391,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         <div className="flex">
                           <Calendar className="text-reccova-violet mr-3 flex-shrink-0" size={18} />
                           <div>
-                            <p className="text-sm text-gray-500">Date & Time</p>
+                            <p className="text-sm text-black">Date & Time</p>
                             <p className="font-medium">
                               {formData.date} at {formData.time}
                             </p>
@@ -401,25 +401,25 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         <div className="flex">
                           <MapPin className="text-reccova-pink mr-3 flex-shrink-0" size={18} />
                           <div>
-                            <p className="text-sm text-gray-500">Location</p>
+                            <p className="text-sm text-black">Location</p>
                             <p className="font-medium">{formData.address}</p>
                           </div>
                         </div>
 
                         <div>
-                          <p className="text-sm text-gray-500">Service</p>
+                          <p className="text-sm text-black">Service</p>
                           <p className="font-medium">{formData.serviceType}</p>
                         </div>
 
                         {formData.message && (
                           <div>
-                            <p className="text-sm text-gray-500">Additional Information</p>
+                            <p className="text-sm text-black">Additional Information</p>
                             <p className="text-sm">{formData.message}</p>
                           </div>
                         )}
                       </div>
 
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-">
                         By confirming this appointment, you agree to our terms and conditions. A confirmation email will
                         be sent to {formData.email}.
                       </p>

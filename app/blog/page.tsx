@@ -112,14 +112,14 @@ export default function BlogPage() {
 
       {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/back.jpeg?height=200&width=200')] bg-repeat opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Reccova Blog</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center"> <span className="gradient-text">Reccova Blog</span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-xl max-w-3xl mx-auto text-center mb-8">
+            <p className="text-xl max-w-3xl mx-auto text-center mb-8 text-black font-semibold">
               Expert insights, tips, and advice from our physiotherapists to help you on your wellness journey.
             </p>
           </TextReveal>
@@ -132,7 +132,7 @@ export default function BlogPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row gap-4 items-center">
               <div className="w-full md:w-2/3 relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black" size={18} />
                 <Input
                   type="text"
                   placeholder="Search articles..."
@@ -171,7 +171,7 @@ export default function BlogPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover"
+                  className="bg-[#F2EFE7] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover"
                 >
                   <div className="h-48 overflow-hidden">
                     <Image
@@ -184,15 +184,15 @@ export default function BlogPage() {
                   </div>
                   <div className="p-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-gray-500">{post.date}</span>
-                      <span className="text-xs font-medium px-3 py-1 bg-gradient-to-r from-reccova-green/10 to-reccova-mint/10 text-reccova-green rounded-full">
+                      <span className="text-sm text-black">{post.date}</span>
+                      <span className="text-xs font-medium px-3 py-1 bg-gradient-to-r from-reccova-green/40 to-reccova-mint/30 text-reccova-green rounded-full">
                         {post.category}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
+                    <h3 className="text-xl text-black font-semibold mb-3">{post.title}</h3>
 
-                    <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                    <p className="text-black mb-4">{post.excerpt}</p>
 
                     <div className="flex justify-between items-center">
                       <div className="flex items-center">
@@ -203,7 +203,7 @@ export default function BlogPage() {
                           height={32}
                           className="rounded-full mr-2 border-2 border-reccova-green/20"
                         />
-                        <span className="text-sm text-gray-600">{post.author}</span>
+                        <span className="text-sm text-black">{post.author}</span>
                       </div>
 
                       <Button
@@ -224,7 +224,7 @@ export default function BlogPage() {
           ) : (
             <div className="text-center py-12 bg-white rounded-2xl shadow-lg">
               <h3 className="text-2xl font-semibold mb-4">No articles found</h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-black mb-6">
                 We couldn't find any articles matching your search criteria. Try adjusting your search or browse all
                 articles.
               </p>
@@ -247,11 +247,11 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal>
-              <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+              <h2 className="text-4xl font-bold mb-4 text-black">Subscribe to Our Newsletter</h2>
             </TextReveal>
 
             <TextReveal delay={0.1}>
-              <p className="text-gray-600 mb-8">
+              <p className="text-black font-semibold lg:text-2xl mb-8">
                 Stay updated with the latest articles, tips, and advice from our expert physiotherapists.
               </p>
             </TextReveal>

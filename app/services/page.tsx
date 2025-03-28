@@ -102,7 +102,7 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20 bg-gray bg-black-100">
+    <div className="pt-24 pb-20 bg-gray bg-[url('/back.jpeg?height=200&width=200')] bg-repeat opacity-90">
       {}
       <section className="bg-reccova-900 text-white py-16 ">
         <div className="container mx-auto px-4 ">

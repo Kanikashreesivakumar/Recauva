@@ -63,7 +63,7 @@ export default function Home() {
       {}
       <section className="py-24 bg-white relative overflow-hidden">
         {}
-        <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+        <AnimatedBlob color="#ACE1AF" size="400px" top="-200px" left="-200px" />
         <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
         <div className="container mx-auto px-4 relative z-10 ">
@@ -304,7 +304,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {}
       <section className="py-24 bg-gradient-to-br from-white via-reccova-lightPink to-reccova-lightViolet">
         <div className="container mx-auto px-4">
           <TextReveal>

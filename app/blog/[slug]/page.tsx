@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import TextReveal from "@/components/text-reveal"
 import AnimatedBlob from "@/components/animated-blob"
 
-// Sample blog data
+
 const blogPosts = {
   "post-surgery-exercises": {
     title: "10 Essential Exercises for Post-Surgery Recovery",
@@ -348,13 +348,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="pt-24 pb-20 relative overflow-hidden">
-      {/* Decorative Elements */}
-      <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+      {}
+      <AnimatedBlob color="#ACE1AF" size="400px" top="-200px" left="-200px" />
       <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Back Button */}
+          {}
           <TextReveal>
             <Button variant="outline" className="mb-8 rounded-full" asChild>
               <Link href="/blog">
@@ -364,7 +364,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </Button>
           </TextReveal>
 
-          {/* Featured Image */}
+          {}
           <TextReveal>
             <div className="relative rounded-2xl overflow-hidden mb-8 shadow-xl">
               <Image
@@ -377,15 +377,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </TextReveal>
 
-          {/* Post Header */}
+          {}
           <TextReveal>
             <div className="mb-8">
               <div className="flex flex-wrap gap-4 items-center mb-4">
-                <span className="inline-flex items-center text-gray-500">
+                <span className="inline-flex items-center text-black">
                   <Calendar className="mr-1 h-4 w-4" />
                   {post.date}
                 </span>
-                <span className="inline-flex items-center text-gray-500">
+                <span className="inline-flex items-center text-black">
                   <User className="mr-1 h-4 w-4" />
                   {post.author}
                 </span>
@@ -397,21 +397,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text">{post.title}</h1>
 
-              <p className="text-xl text-gray-600">{post.excerpt}</p>
+              <p className="text-xl text-black">{post.excerpt}</p>
             </div>
           </TextReveal>
 
-          {/* Post Content */}
+          {}
           <TextReveal>
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
               <div
-                className="prose prose-lg max-w-none prose-headings:text-gray-800 prose-headings:font-semibold prose-p:text-gray-600 prose-a:text-reccova-green prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
+                className="prose prose-lg max-w-none prose-headings:text-black prose-headings:font-semibold prose-p:text-gray-600 prose-a:text-reccova-green prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </div>
           </TextReveal>
 
-          {/* Author Bio */}
+          {}
           <TextReveal>
             <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-mint/5 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 mb-8">
               <Image
@@ -423,15 +423,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               />
               <div>
                 <h3 className="text-xl font-semibold mb-2">{post.author}</h3>
-                <p className="text-gray-600">{post.authorBio}</p>
+                <p className="text-black">{post.authorBio}</p>
               </div>
             </div>
           </TextReveal>
 
-          {/* Share Buttons */}
+          {}
           <TextReveal>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl shadow-lg p-6">
-              <span className="font-medium text-gray-700 flex items-center">
+              <span className="font-medium text-black text-black flex items-center">
                 <Share2 className="mr-2 h-5 w-5" />
                 Share this article
               </span>

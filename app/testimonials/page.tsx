@@ -117,43 +117,43 @@ export default function TestimonialsPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20 bg-[url('/back.jpeg?height=200&width=200')]  opacity-70">
       <div className="container mx-auto px-4">
-        {/* Header */}
+        {}
         <div className="max-w-3xl mx-auto text-center mb-12 reveal">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Client <span className="gradient-text">Testimonials</span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+             <span className="gradient-text">Client Testimonials</span>
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-black lg:text-2xl font-semibold">
             Don't just take our word for it. Hear from our satisfied clients about their experience with Reccova.
           </p>
         </div>
 
-        {/* Overall Rating */}
+        {}
         <div className="max-w-md mx-auto mb-16 reveal">
-          <div className="bg-white rounded-xl p-8 shadow-md text-center">
-            <h2 className="text-2xl font-semibold mb-4">Overall Client Satisfaction</h2>
+          <div className="bg-[#F2EFE7] rounded-xl p-8 shadow-md text-center">
+            <h2 className="text-2xl font-semibold text-black mb-4">Overall Client Satisfaction</h2>
             <div className="flex justify-center mb-4">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} className="h-8 w-8 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            <p className="text-3xl font-bold mb-2">4.8 / 5</p>
-            <p className="text-gray-600">Based on {testimonials.length} reviews</p>
+            <p className="text-3xl font-bold text-black mb-2">4.8 / 5</p>
+            <p className="text-black">Based on {testimonials.length} reviews</p>
           </div>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+        {}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal ">
           {isLoading
             ? Array(6)
                 .fill(0)
                 .map((_, index) => (
-                  <div key={index} className="bg-white rounded-xl p-6 shadow-md animate-pulse h-[300px]">
+                  <div key={index} className="bg-black rounded-xl p-6 shadow-md animate-pulse h-[300px]">
                     <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                      <div className="w-16 h-16 rounded-full mr-4"></div>
                       <div>
-                        <div className="h-6 bg-gray-200 rounded w-32 mb-2"></div>
+                        <div className="h-6 bg-black rounded w-32 mb-2"></div>
                         <div className="flex">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <div key={star} className="w-5 h-5 bg-gray-200 rounded-full mr-1"></div>
@@ -185,7 +185,7 @@ export default function TestimonialsPage() {
                         />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold">{testimonial.name}</h3>
+                        <h3 className="text-xl text-white font-semibold">{testimonial.name}</h3>
                         <div className="flex mt-1">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <Star
@@ -198,7 +198,7 @@ export default function TestimonialsPage() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-600 italic">{testimonial.feedback}</p>
+                    <p className="text-white italic">{testimonial.feedback}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -206,8 +206,8 @@ export default function TestimonialsPage() {
 
         {/* CTA */}
         <div className="max-w-3xl mx-auto mt-16 text-center reveal">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Experience Our Services?</h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <h2 className="text-2xl md:text-5xl font-bold text-black mb-6">Ready to Experience Our Services?</h2>
+          <p className="text-lg text-black lg:text-2xl font-semibold mb-8">
             Join our satisfied clients and start your journey to recovery with Reccova's professional physiotherapy
             services.
           </p>

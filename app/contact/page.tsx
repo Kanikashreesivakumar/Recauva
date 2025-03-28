@@ -29,7 +29,6 @@ export default function ContactPage() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
-    // Clear error when field is edited
     if (errors[name]) {
       setErrors((prev) => {
         const newErrors = { ...prev }
@@ -62,7 +61,6 @@ export default function ContactPage() {
       setIsSubmitting(true)
 
       try {
-        // Simulate API call
         await new Promise((resolve) => setTimeout(resolve, 1500))
 
         toast({
@@ -71,7 +69,6 @@ export default function ContactPage() {
           duration: 5000,
         })
 
-        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -93,37 +90,37 @@ export default function ContactPage() {
 
   return (
     <div className="pt-24 pb-20 relative overflow-hidden">
-      {/* Decorative Elements */}
-      <AnimatedBlob color="ACE1AF" size="400px" top="-200px" left="-200px" />
+      {}
+      <AnimatedBlob color="#ACE1AF" size="400px" top="-200px" left="-200px" />
       <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
 
-      {/* Hero Section */}
+      {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/sport2.jpeg?height=200&width=200')] opacity-30"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Contact Us</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center"> <span className="gradient-text">Contact Us </span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-xl max-w-3xl mx-auto text-center mb-8">
+            <p className="text-3xl max-w-9xl font-semibold mx-auto text-black text-center mb-8">
               Have questions or ready to book your appointment? Get in touch with our team today.
             </p>
           </TextReveal>
         </div>
       </section>
 
-      {/* Contact Information */}
+      {}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <TextReveal>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-mint/20 p-4 rounded-full inline-flex mb-6">
                   <MapPin className="h-8 w-8 text-reccova-green" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Our Location</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-black mb-3">Our Location</h3>
+                <p className="text-black font-semibold">
                   123 Healing Street
                   <br />
                   Wellness City, WC 12345
@@ -132,12 +129,12 @@ export default function ContactPage() {
             </TextReveal>
 
             <TextReveal delay={0.1}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-violet/20 to-reccova-pink/20 p-4 rounded-full inline-flex mb-6">
                   <Phone className="h-8 w-8 text-reccova-violet" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Phone</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-black mb-3">Phone</h3>
+                <p className="text-black font-semibold">
                   <a href="tel:+1234567890" className="hover:text-reccova-violet transition-colors">
                     (123) 456-7890
                   </a>
@@ -146,12 +143,12 @@ export default function ContactPage() {
             </TextReveal>
 
             <TextReveal delay={0.2}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-pink/20 to-reccova-violet/20 p-4 rounded-full inline-flex mb-6">
                   <Mail className="h-8 w-8 text-reccova-pink" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Email</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-semibold text-black mb-3">Email</h3>
+                <p className="text-black font-semibold">
                   <a href="mailto:info@reccova.com" className="hover:text-reccova-pink transition-colors">
                     info@reccova.com
                   </a>
@@ -160,12 +157,12 @@ export default function ContactPage() {
             </TextReveal>
 
             <TextReveal delay={0.3}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
                 <div className="bg-gradient-to-br from-reccova-mint/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
                   <Clock className="h-8 w-8 text-reccova-mint" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Hours</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl text-black font-semibold mb-3">Hours</h3>
+                <p className="text-black font-semibold">
                   Monday - Friday: 8am - 8pm
                   <br />
                   Saturday: 9am - 5pm
@@ -178,13 +175,13 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form and Map */}
-      <section className="py-16 bg-gradient-to-br from-white via-reccova-lightGreen to-reccova-lightViolet">
+      {}
+      <section className="py-16 bg-white from-white via-reccova-lightGreen to-reccova-lightViolet">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-black font-bold lg:text-xl ">
             <TextReveal>
-              <div className="bg-white p-8 rounded-2xl shadow-xl">
-                <h2 className="text-3xl font-bold mb-6 gradient-text">Send Us a Message</h2>
+              <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-xl">
+                <h2 className="text-4xl font-bold mb-6 gradient-text">Send Us a Message</h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -294,19 +291,19 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <TextReveal>
-            <h2 className="text-3xl font-bold text-center mb-12 gradient-text">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Frequently Asked Questions</h2>
           </TextReveal>
 
           <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
               <TextReveal delay={0.1}>
                 <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold mb-3">How do I book a home physiotherapy session?</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-black mb-3">How do I book a home physiotherapy session?</h3>
+                  <p className="text-black">
                     You can book a session through our online booking system, by calling our office, or by sending us a
                     message through the contact form. We'll get back to you promptly to confirm your appointment.
                   </p>
@@ -315,8 +312,8 @@ export default function ContactPage() {
 
               <TextReveal delay={0.2}>
                 <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold mb-3">What areas do you serve?</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-black mb-3">What areas do you serve?</h3>
+                  <p className="text-black">
                     We currently provide home physiotherapy services throughout the greater metropolitan area and
                     surrounding suburbs. Contact us to confirm if we serve your specific location.
                   </p>
@@ -325,8 +322,8 @@ export default function ContactPage() {
 
               <TextReveal delay={0.3}>
                 <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold mb-3">Do I need a doctor's referral?</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-black mb-3">Do I need a doctor's referral?</h3>
+                  <p className="text-black">
                     While a doctor's referral is beneficial, it's not always required. We can assess your condition and
                     develop a treatment plan based on your needs. However, some insurance providers may require a
                     referral for coverage.
@@ -336,8 +333,8 @@ export default function ContactPage() {
 
               <TextReveal delay={0.4}>
                 <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold mb-3">What should I expect during my first session?</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold text-black mb-3">What should I expect during my first session?</h3>
+                  <p className="text-black">
                     Your first session will include a comprehensive assessment of your condition, discussion of your
                     medical history and goals, and the beginning of your treatment plan. It typically lasts 60-90
                     minutes.

@@ -44,6 +44,7 @@ export default function Navigation() {
     { name: "Blog", href: "/blog" },
     { name: "Testimonials", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
+    
   ]
 
   return (
