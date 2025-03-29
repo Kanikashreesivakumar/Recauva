@@ -81,7 +81,7 @@ export default function Navigation() {
                     transition={{ type: "spring", stiffness: 300 }}
                     className="text-2xl font-bold gradient-text"
                   >
-                    Reccova
+                    Recauva
                   </motion.div>
                 </div>
               )}

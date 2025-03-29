@@ -89,7 +89,7 @@ const blogPosts = {
         <li>Monitor your progress and address any concerns</li>
       </ul>
       
-      <p>At Reccova, our experienced physiotherapists specialize in post-surgery rehabilitation and can provide personalized care in the comfort of your home.</p>
+      <p>At Recauva, our experienced physiotherapists specialize in post-surgery rehabilitation and can provide personalized care in the comfort of your home.</p>
       
       <h2>Conclusion</h2>
       <p>Recovery after surgery takes time and patience, but incorporating appropriate exercises can significantly improve your outcomes. Remember to start slowly, listen to your body, and follow your healthcare provider's guidance. With consistency and proper technique, these ten exercises can help you regain your strength, mobility, and independence more quickly.</p>
@@ -100,7 +100,7 @@ const blogPosts = {
     author: "Dr. Sarah Johnson",
     authorImage: "/placeholder.svg?height=80&width=80",
     authorBio:
-      "Dr. Sarah Johnson is a senior physiotherapist at Reccova with over 15 years of experience specializing in post-surgical rehabilitation and sports injuries.",
+      "Dr. Sarah Johnson is a senior physiotherapist at Recauva with over 15 years of experience specializing in post-surgical rehabilitation and sports injuries.",
   },
   "chronic-pain-management": {
     title: "Understanding Chronic Pain: Causes and Management",

@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
             id: 1,
             name: "Sarah Johnson",
             feedback:
-              "Reccova's home physiotherapy services have been life-changing. After my knee surgery, their therapist came to my home and provided exceptional care. I'm now back to my normal activities!",
+              "Recauva's home physiotherapy services have been life-changing. After my knee surgery, their therapist came to my home and provided exceptional care. I'm now back to my normal activities!",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=SJ",
           },
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
             id: 2,
             name: "Michael Chen",
             feedback:
-              "As someone with chronic back pain, finding Reccova was a blessing. Their therapist designed a personalized program that has significantly reduced my pain. Highly recommended!",
+              "As someone with chronic back pain, finding Recauva was a blessing. Their therapist designed a personalized program that has significantly reduced my pain. Highly recommended!",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=MC",
           },
@@ -40,7 +40,7 @@ export default function TestimonialsPage() {
             id: 3,
             name: "Emily Rodriguez",
             feedback:
-              "The convenience of having professional physiotherapy at home is incredible. Reccova's therapists are knowledgeable, punctual, and truly care about your recovery.",
+              "The convenience of having professional physiotherapy at home is incredible. Recauva's therapists are knowledgeable, punctual, and truly care about your recovery.",
             rating: 4,
             image_url: "/placeholder.svg?height=100&width=100&text=ER",
           },
@@ -48,7 +48,7 @@ export default function TestimonialsPage() {
             id: 4,
             name: "David Wilson",
             feedback:
-              "I was skeptical about home physiotherapy at first, but Reccova changed my mind. The therapist was professional, attentive, and helped me recover from my shoulder injury faster than expected.",
+              "I was skeptical about home physiotherapy at first, but Recauva changed my mind. The therapist was professional, attentive, and helped me recover from my shoulder injury faster than expected.",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=DW",
           },
@@ -56,7 +56,7 @@ export default function TestimonialsPage() {
             id: 5,
             name: "Jennifer Lee",
             feedback:
-              "After trying several physiotherapy clinics with little improvement, I decided to give Reccova a try. The personalized attention and convenience of home sessions made all the difference. My mobility has improved significantly!",
+              "After trying several physiotherapy clinics with little improvement, I decided to give Recauva  a try. The personalized attention and convenience of home sessions made all the difference. My mobility has improved significantly!",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=JL",
           },
@@ -64,7 +64,7 @@ export default function TestimonialsPage() {
             id: 6,
             name: "Robert Brown",
             feedback:
-              "As a busy professional, finding time for physiotherapy was always a challenge. Reccova's flexible scheduling and home visits have been a game-changer. Great service and excellent results!",
+              "As a busy professional, finding time for physiotherapy was always a challenge. Recauva's flexible scheduling and home visits have been a game-changer. Great service and excellent results!",
             rating: 4,
             image_url: "/placeholder.svg?height=100&width=100&text=RB",
           },
@@ -72,7 +72,7 @@ export default function TestimonialsPage() {
             id: 7,
             name: "Maria Garcia",
             feedback:
-              "My elderly mother needed physiotherapy but was unable to travel to clinics. Reccova's home service has been perfect for her needs. The therapist is patient, kind, and has helped her regain confidence in her mobility.",
+              "My elderly mother needed physiotherapy but was unable to travel to clinics. Recauva's home service has been perfect for her needs. The therapist is patient, kind, and has helped her regain confidence in her mobility.",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=MG",
           },
@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
             id: 8,
             name: "James Taylor",
             feedback:
-              "I've been using Reccova for sports injury rehabilitation for the past few months. The therapist's expertise in sports medicine has been invaluable in getting me back to my training routine safely.",
+              "I've been using Recauva for sports injury rehabilitation for the past few months. The therapist's expertise in sports medicine has been invaluable in getting me back to my training routine safely.",
             rating: 5,
             image_url: "/placeholder.svg?height=100&width=100&text=JT",
           },
@@ -117,15 +117,15 @@ export default function TestimonialsPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20 bg-[url('/back.jpeg?height=200&width=200')]  opacity-70">
+    <div className=" pt-24 pb-20 bg-[url('/serback.jpeg?height=200&width=200')] bg-no-repeat bg-fixed bg-cover opacity-100">
       <div className="container mx-auto px-4">
         {}
         <div className="max-w-3xl mx-auto text-center mb-12 reveal">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
              <span className="gradient-text">Client Testimonials</span>
           </h1>
-          <p className="text-xl text-black lg:text-2xl font-semibold">
-            Don't just take our word for it. Hear from our satisfied clients about their experience with Reccova.
+          <p className="text-2xl text-black lg:text-3xl font-semibold">
+            Don't just take our word for it. Hear from our satisfied clients about their experience with Recauva.
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function TestimonialsPage() {
                   className="overflow-hidden hover:shadow-lg transition-all animate-fadeIn"
                   style={{ animationDelay: `${testimonial.id * 100}ms` }}
                 >
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 bg-[#F2EFE7]">
                     <div className="flex items-center mb-6">
                       <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4">
                         <Image
@@ -185,7 +185,7 @@ export default function TestimonialsPage() {
                         />
                       </div>
                       <div>
-                        <h3 className="text-xl text-white font-semibold">{testimonial.name}</h3>
+                        <h3 className="text-xl text-black font-semibold">{testimonial.name}</h3>
                         <div className="flex mt-1">
                           {[1, 2, 3, 4, 5].map((star) => (
                             <Star
@@ -198,21 +198,23 @@ export default function TestimonialsPage() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-white italic">{testimonial.feedback}</p>
+                    <p className="text-black italic">{testimonial.feedback}</p>
                   </CardContent>
                 </Card>
               ))}
         </div>
 
-        {/* CTA */}
+        {}
         <div className="max-w-3xl mx-auto mt-16 text-center reveal">
-          <h2 className="text-2xl md:text-5xl font-bold text-black mb-6">Ready to Experience Our Services?</h2>
-          <p className="text-lg text-black lg:text-2xl font-semibold mb-8">
-            Join our satisfied clients and start your journey to recovery with Reccova's professional physiotherapy
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">Ready to Experience Our Services?</h2>
+          <p className="text-lg text-black lg:text-4xl font-semibold mb-8">
+            Join our satisfied clients and start your journey to recovery with Recauva's professional physiotherapy
             services.
           </p>
           <Button className="gradient-bg text-white hover:shadow-lg transition-all px-8 py-6 rounded-full text-lg">
+          
             Book a Session Now
+           
           </Button>
         </div>
       </div>

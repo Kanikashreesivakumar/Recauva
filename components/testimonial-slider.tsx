@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
     role: "Recovery Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
-      "After my surgery, I was worried about recovery. Reccova's home physiotherapy made it so convenient. Their therapist was professional and helped me regain mobility faster than expected.",
+      "After my surgery, I was worried about recovery. Recauva's home physiotherapy made it so convenient. Their therapist was professional and helped me regain mobility faster than expected.",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     role: "Sports Injury Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
-      "As an athlete, injuries can be devastating. The personalized care I received from Reccova was exceptional. They understood my goals and tailored a recovery plan that got me back to training in record time.",
+      "As an athlete, injuries can be devastating. The personalized care I received from Recauva was exceptional. They understood my goals and tailored a recovery plan that got me back to training in record time.",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     role: "Chronic Pain Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
-      "I've struggled with chronic back pain for years. The Reccova therapist who visits me is knowledgeable and compassionate. For the first time in a decade, I'm experiencing significant relief.",
+      "I've struggled with chronic back pain for years. The Recauva therapist who visits me is knowledgeable and compassionate. For the first time in a decade, I'm experiencing significant relief.",
   },
   {
     id: 4,

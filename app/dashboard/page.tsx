@@ -123,7 +123,6 @@ export default function DashboardPage() {
     try {
       await cancelAppointment(id)
 
-      // Update local state
       setAppointments((prev) => prev.filter((app) => app.id !== id))
 
       toast({
@@ -143,7 +142,7 @@ export default function DashboardPage() {
     }
   }
 
-  // Add some sample appointments if none exist
+  
   useEffect(() => {
     if (!isLoading && appointments.length === 0) {
       const sampleAppointments: Appointment[] = [
@@ -196,7 +195,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      {/* Dashboard Content */}
+      {}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="appointments" className="max-w-5xl mx-auto">

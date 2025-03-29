@@ -49,7 +49,7 @@ export default function LoadingAnimation() {
           transition={{ duration: 0.5 }}
           className="mb-8 text-center"
         >
-          <div className="text-4xl font-bold gradient-text">Reccova</div>
+          <div className="text-4xl font-bold gradient-text">Recauva</div>
           <div className="text-lg text-gray-500">Home Physiotherapy</div>
         </motion.div>
       </div>

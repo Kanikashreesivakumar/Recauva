@@ -13,7 +13,7 @@ import LiveChat from "@/components/live-chat"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Reccova - Home Physiotherapy Services",
+  title: "Recauva  - Home Physiotherapy Services",
   description: "Professional physiotherapy services in the comfort of your home. Book your session today.",
   keywords: "physiotherapy, home care, physical therapy, rehabilitation, recovery, health",
 }

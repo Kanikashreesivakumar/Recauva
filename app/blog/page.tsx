@@ -17,7 +17,7 @@ const blogPosts = [
     title: "10 Essential Exercises for Post-Surgery Recovery",
     excerpt:
       "Learn about the most effective exercises to speed up your recovery after surgery and regain your strength and mobility safely.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/blog1.jpeg?height=400&width=600",
     date: "May 15, 2023",
     category: "Recovery Tips",
     author: "Dr. Sarah Johnson",
@@ -28,7 +28,7 @@ const blogPosts = [
     title: "Understanding Chronic Pain: Causes and Management",
     excerpt:
       "Our experts explain the science behind chronic pain and effective strategies for managing it in your daily life.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/blog2.jpeg?height=400&width=600",
     date: "April 28, 2023",
     category: "Expert Advice",
     author: "Dr. Michael Chen",
@@ -39,7 +39,7 @@ const blogPosts = [
     title: "The Benefits of Regular Stretching for All Ages",
     excerpt:
       "Discover how incorporating simple stretching routines into your daily life can improve flexibility, reduce pain, and enhance overall well-being.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/blog3.jpeg?height=400&width=600",
     date: "March 12, 2023",
     category: "Wellness",
     author: "Emily Rodriguez",
@@ -50,7 +50,7 @@ const blogPosts = [
     title: "Preventing Common Sports Injuries: A Guide for Athletes",
     excerpt:
       "Learn proactive strategies to prevent common sports injuries and keep yourself in the game longer with these expert tips.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/injury.jpeg?height=400&width=600",
     date: "February 25, 2023",
     category: "Sports Therapy",
     author: "Dr. James Wilson",
@@ -61,7 +61,7 @@ const blogPosts = [
     title: "Fall Prevention Strategies for Older Adults",
     excerpt:
       "Discover practical tips and exercises to improve balance and reduce the risk of falls for seniors living independently.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/walk.jpeg?height=400&width=600",
     date: "January 18, 2023",
     category: "Geriatric Care",
     author: "Dr. Lisa Thompson",
@@ -72,7 +72,7 @@ const blogPosts = [
     title: "Ergonomics at Home: Setting Up Your Workspace",
     excerpt:
       "Working from home? Learn how to set up an ergonomic workspace to prevent pain and discomfort during long hours at your desk.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/work.jpeg?height=400&width=600",
     date: "December 5, 2022",
     category: "Ergonomics",
     author: "Robert Williams",
@@ -112,14 +112,14 @@ export default function BlogPage() {
 
       {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/back.jpeg?height=200&width=200')] bg-repeat opacity-20"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/blogback.jpeg?height=200&width=200')] bg-center bg-cover bg-no-repeat opacity-60"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center"> <span className="gradient-text">Reccova Blog</span></h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-9 text-center"> <span className="gradient-text">Recauva Blog</span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-xl max-w-3xl mx-auto text-center mb-8 text-black font-semibold">
+            <p className="text-3xl max-w-5xl mx-auto text-center mb-8 text-black font-semibold">
               Expert insights, tips, and advice from our physiotherapists to help you on your wellness journey.
             </p>
           </TextReveal>

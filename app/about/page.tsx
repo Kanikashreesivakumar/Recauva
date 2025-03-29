@@ -117,7 +117,7 @@ export default function AboutPage() {
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/back.jpeg?height=400&width=300')] bg-repeat opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
-            <h1 className="text-6xl md:text-7xl font-bold mb-7 text-center"><span className="gradient-text">About Reccova </span></h1>
+            <h1 className="text-6xl md:text-7xl font-bold mb-7 text-center"><span className="gradient-text">About Recauva </span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
@@ -156,25 +156,22 @@ export default function AboutPage() {
 
               <TextReveal delay={0.1}>
                 <p className="text-black mb-6">
-                  Reccova was founded in 2008 with a simple yet powerful vision: to transform how physiotherapy care is
-                  delivered by bringing expert services directly to patients' homes. We recognized that traditional
-                  clinic-based care presented barriers for many people – from those recovering from surgery to elderly
-                  patients with mobility challenges.
+                At Recauva, we believe that recovery is more than just healing—it’s about restoring strength, regaining confidence, and embracing a healthier future. Inspired by the power of movement and innovation, we set out to redefine physiotherapy and rehabilitation with a modern, technology-driven approach
                 </p>
               </TextReveal>
 
               <TextReveal delay={0.2}>
                 <p className="text-black mb-6">
-                  What began as a small team of dedicated therapists has grown into a comprehensive network of
-                  specialists covering diverse physiotherapy needs. Throughout our growth, we've remained committed to
-                  our founding principle: that healing happens best in comfortable, familiar environments.
+                Whether you’re recovering from an injury, managing chronic pain, or looking to improve mobility, Recauva is your trusted partner in recovery. Our platform connects you with expert physiotherapists and personalized therapy plans, ensuring faster, smarter, and more effective healing.
+
+. Throughout our growth, we've remained committed to our founding principle: that healing happens best in comfortable, familiar environments.
                 </p>
               </TextReveal>
 
               <TextReveal delay={0.3}>
                 <p className="text-black mb-8">
-                  Today, Reccova is proud to be a leader in home physiotherapy services, having helped thousands of
-                  patients achieve their recovery goals without ever leaving their homes. Our innovative approach
+                We envision a future where healthcare is accessible, proactive, and patient-focused. Today, we start with physiotherapy, but our mission is to expand into holistic healthcare, making recovery and well-being available to everyone, everywhere.
+                . Our innovative approach
                   combines clinical excellence with the comfort and convenience that only home-based care can provide.
                 </p>
               </TextReveal>
@@ -204,7 +201,7 @@ export default function AboutPage() {
             <div className="text-center mb-16 bg">
               <h2 className="text-4xl md:text-4xl font-bold mb-6 text-black">Our Mission & Values</h2>
               <p className="text-2xl text-black max-w-3xl mx-auto font-semibold">
-                At Reccova, we're guided by a clear mission: to provide exceptional physiotherapy care in the comfort of
+                At Recauva, we're guided by a clear mission: to provide exceptional physiotherapy care in the comfort of
                 patients' homes, empowering them to achieve optimal health and independence.
               </p>
             </div>
@@ -264,12 +261,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Reccova */}
+      {}
       <section className="py-20 bg-gradient-to-br from-white via-reccova-lightPink to-reccova-lightViolet">
         <div className="container mx-auto px-4">
           <TextReveal>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Why Choose <span className="gradient-text">Reccova</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Why Choose <span className="gradient-text">Recauva</span></h2>
               <p className="text-2xl text-black max-w-3xl mx-auto font-semibold">
                 Home-based physiotherapy offers unique advantages that enhance your recovery journey and overall
                 experience.
@@ -297,7 +294,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Facts */}
+      {}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <TextReveal>

@@ -166,7 +166,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
             className="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Decorative Elements */}
+            {}
             <div className="absolute top-0 right-0 w-40 h-40 bg-reccova-green/10 rounded-full blur-xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-40 h-40 bg-reccova-violet/10 rounded-full blur-xl translate-y-1/2 -translate-x-1/2"></div>
 

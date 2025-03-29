@@ -14,12 +14,10 @@ export default function LiveChat() {
   const [isTyping, setIsTyping] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  // Scroll to bottom when messages change
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages, isTyping])
 
-  // Simulate receiving a welcome message when chat opens
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setTimeout(() => {
@@ -30,7 +28,7 @@ export default function LiveChat() {
           setMessages([
             {
               sender: "support",
-              text: "Hello! Welcome to Reccova support. How can I help you today?",
+              text: "Hello! Welcome to Recauva support. How can I help you today?",
               time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
             },
           ])

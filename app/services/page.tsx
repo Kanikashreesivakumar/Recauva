@@ -13,7 +13,7 @@ const services = [
     title: "Rehabilitation Therapy",
     description:
       "Our rehabilitation therapy is designed to help patients recover from surgeries, injuries, or medical conditions that have impacted their mobility and function. Our therapists work closely with you to develop a personalized recovery plan that addresses your specific needs and goals.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/rehab1.jpeg?height=600&width=800",
     features: [
       "Post-surgery recovery programs",
       "Injury rehabilitation",
@@ -28,7 +28,7 @@ const services = [
     title: "Sports Injury Treatment",
     description:
       "Athletes and active individuals require specialized care to recover from sports-related injuries and return to their activities safely. Our sports injury treatment focuses on addressing the specific demands of your sport or activity while promoting proper healing and preventing future injuries.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/sport3.jpeg?height=600&width=800",
     features: [
       "Sport-specific rehabilitation",
       "Biomechanical analysis",
@@ -43,7 +43,7 @@ const services = [
     title: "Geriatric Physiotherapy",
     description:
       "Our geriatric physiotherapy services are tailored to address the unique needs of older adults. We focus on improving mobility, reducing pain, preventing falls, and enhancing overall quality of life through gentle yet effective therapeutic approaches.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/gene1.jpeg?height=600&width=800",
     features: [
       "Balance and gait training",
       "Fall prevention strategies",
@@ -58,7 +58,7 @@ const services = [
     title: "Neurological Therapy",
     description:
       "For individuals with neurological conditions such as stroke, Parkinson's disease, or multiple sclerosis, our specialized neurological therapy aims to improve function, mobility, and independence through targeted interventions and exercises.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/neu1.jpeg?height=600&width=800",
     features: [
       "Neuromuscular re-education",
       "Functional movement training",
@@ -73,7 +73,7 @@ const services = [
     title: "Pediatric Therapy",
     description:
       "Our pediatric physiotherapy services are designed to help children with developmental delays, injuries, or medical conditions improve their motor skills, strength, and mobility in a fun and engaging environment.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/neu.jpeg?height=600&width=800",
     features: [
       "Developmental milestone achievement",
       "Motor skill development",
@@ -88,7 +88,7 @@ const services = [
     title: "Pain Management",
     description:
       "Our comprehensive pain management approach combines various therapeutic techniques to help reduce chronic pain, improve function, and enhance quality of life without relying solely on medication.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/pain.jpeg?height=600&width=800",
     features: [
       "Manual therapy techniques",
       "Therapeutic exercises",
@@ -102,16 +102,16 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20 bg-gray bg-[url('/back.jpeg?height=200&width=200')] bg-repeat opacity-90">
+    <div className="pt-24 pb-20 bg-gray bg-gray/200 bg-cover bg-center bg-no-repeat min-h-screen  opacity-90">
       {}
       <section className="bg-reccova-900 text-white py-16 ">
         <div className="container mx-auto px-4 ">
           <TextReveal>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center"><span className="gradient-text">Our Services</span></h1>
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 text-center"><span className="gradient-text">Our Services</span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-xl max-w-3xl mx-auto text-center mb-10 text-white font-bold mb-4">
+            <p className="text-4xl max-w-5xl mx-auto text-center mb-10 text-white font-bold mb-4">
               Discover our comprehensive range of physiotherapy services, all delivered in the comfort of your home by
               our expert therapists.
             </p>
@@ -159,19 +159,19 @@ export default function ServicesPage() {
 
                 <div className="lg:w-1/2">
                   <TextReveal>
-                    <h2 className="text-3xl font-bold mb-4 text-gray-700">{service.title}</h2>
+                    <h2 className="text-3xl font-bold mb-4 text-black">{service.title}</h2>
                   </TextReveal>
 
                   <TextReveal delay={0.1}>
-                    <p className="text-gray-700 mb-6">{service.description}</p>
+                    <p className="text-black mb-6">{service.description}</p>
                   </TextReveal>
 
                   <TextReveal delay={0.2}>
-                    <h3 className="text-xl font-semibold mb-4 text-gray-700">What We Offer:</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-black">What We Offer:</h3>
                   </TextReveal>
 
                   <TextReveal delay={0.3}>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 text-gray-700">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 text-black">
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-start">
                           <div className="h-6 w-6 rounded-full bg-reccova-100 flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
@@ -184,7 +184,7 @@ export default function ServicesPage() {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <span className="text-gray-700">{feature}</span>
+                          <span className="text-black">{feature}</span>
                         </li>
                       ))}
                     </ul>

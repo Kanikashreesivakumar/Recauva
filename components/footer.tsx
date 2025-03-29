@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <h2 className="text-6xl font-bold gradient-text mb-10">Reccova</h2>
+            <h2 className="text-6xl font-bold gradient-text mb-10">Recauva</h2>
             <p className="text-black mb-8">
               Professional physiotherapy services in the comfort of your home. We bring healing to your doorstep with
               personalized care and expert therapists.

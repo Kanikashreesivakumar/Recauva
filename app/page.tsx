@@ -27,7 +27,7 @@ export default function Home() {
 
             <TextReveal>
               <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-black mb-7">
-              <span className="gradient-text"> Reccova </span> - Your Homecare Physiotherapy Companion
+              <span className="gradient-text">Recauva </span> - Your Homecare Physiotherapy Companion
               </h1>
             </TextReveal>
 
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 ">
           <TextReveal>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
-              Why Choose <span className="gradient-text">Reccova</span> Home Physiotherapy?
+              Why Choose <span className="gradient-text">Recauva</span> Home Physiotherapy?
             </h2>
           </TextReveal>
 
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="bg-[#F2EFE7] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/rehab.jpeg?height=400&width=600"
                     alt="Rehabilitation"
                     width={600}
                     height={400}
@@ -399,7 +399,7 @@ export default function Home() {
               <div className="bg-[#F2EFE7] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/blog1.jpeg?vgheight=400&width=600"
                     alt="Blog Post 1"
                     width={600}
                     height={400}
@@ -430,7 +430,7 @@ export default function Home() {
               <div className="bg-[#F2EFE7] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/blog2.jpeg?height=400&width=600"
                     alt="Blog Post 2"
                     width={600}
                     height={400}
@@ -461,7 +461,7 @@ export default function Home() {
               <div className="bg-[#F2EFE7] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow card-hover">
                 <div className="h-48 overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/blog3.jpeg?height=400&width=600"
                     alt="Blog Post 3"
                     width={600}
                     height={400}

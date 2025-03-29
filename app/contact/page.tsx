@@ -96,7 +96,7 @@ export default function ContactPage() {
 
       {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/sport2.jpeg?height=200&width=200')] opacity-30"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/call.jpeg?height=400&width=400')] opacity-90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center"> <span className="gradient-text">Contact Us </span></h1>
@@ -121,9 +121,9 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Our Location</h3>
                 <p className="text-black font-semibold">
-                  123 Healing Street
+                  Madiwala
                   <br />
-                  Wellness City, WC 12345
+                  Bangalore,India
                 </p>
               </div>
             </TextReveal>
@@ -135,8 +135,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Phone</h3>
                 <p className="text-black font-semibold">
-                  <a href="tel:+1234567890" className="hover:text-reccova-violet transition-colors">
-                    (123) 456-7890
+                  <a href="tel:+916383791589" className="hover:text-reccova-violet transition-colors">
+                    +91 6383791589
                   </a>
                 </p>
               </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-black mb-3">Email</h3>
                 <p className="text-black font-semibold">
                   <a href="mailto:info@reccova.com" className="hover:text-reccova-pink transition-colors">
-                    info@reccova.com
+                    mukil@gmail.com
                   </a>
                 </p>
               </div>
@@ -270,21 +270,6 @@ export default function ContactPage() {
                     )}
                   </Button>
                 </form>
-              </div>
-            </TextReveal>
-
-            <TextReveal delay={0.2}>
-              <div className="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1647882211313!5m2!1sen!2sca"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Reccova Location"
-                ></iframe>
               </div>
             </TextReveal>
           </div>
