@@ -295,7 +295,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                           }`}
                         >
                         
-                          <option value="">Select a service--> </option>
+                          <option value=""> Select a service--> </option>
                           {serviceOptions.map((service) => (
                             <option key={service} value={service}>
                               {service}

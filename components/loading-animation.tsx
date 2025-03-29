@@ -49,8 +49,8 @@ export default function LoadingAnimation() {
           transition={{ duration: 0.5 }}
           className="mb-8 text-center"
         >
-          <div className="text-4xl font-bold gradient-text">Recauva</div>
-          <div className="text-lg text-gray-500">Home Physiotherapy</div>
+          <div className="text-5xl font-bold gradient-text">Recauva</div>
+          <div className="text-lg lg:text-1xl text-black font-semibold">Recovery is more than just healing</div>
         </motion.div>
       </div>
 
@@ -64,7 +64,7 @@ export default function LoadingAnimation() {
       </div>
 
       <motion.p
-        className="mt-4 text-gray-500"
+        className="mt-4 text-black lg:text-1xl font-semibold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
