@@ -139,18 +139,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 text-reccova-green mt-1 flex-shrink-0" />
-                <span className="text-black">123 Healing Street, Wellness City, WC 12345</span>
+                <span className="text-black">Madiwala , Bangalore , karnataka ,India</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-3 text-reccova-violet flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-black hover:text-gray-900 transition-colors">
-                  (123) 456-7890
-                </a>
+                <a href="tel:+916383791589" className="text-black hover:text-gray-900 transition-colors">
+                  +91 6383791589                </a>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-3 text-reccova-pink flex-shrink-0" />
-                <a href="mailto:info@reccova.com" className="text-black hover:text-gray-900 transition-colors">
-                  info@reccova.com
+                <a href="mailto:kanikashreesivakumar16@gmail.com" className="text-black hover:text-gray-900 transition-colors">
+                  mukil@gmail.com
                 </a>
               </li>
             </ul>

@@ -225,7 +225,7 @@ export default function DashboardPage() {
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.3, delay: index * 0.1 }}
-                          className="bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
+                          className="bg-black border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
                         >
                           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                             <div>
@@ -272,7 +272,7 @@ export default function DashboardPage() {
                                   </DialogHeader>
 
                                   <div className="space-y-4 py-4">
-                                    <div className="space-y-2">
+                                    <div className="space-y-2 text:black">
                                       <Label htmlFor="new-date">New Date</Label>
                                       <Input
                                         id="new-date"
@@ -283,7 +283,7 @@ export default function DashboardPage() {
                                       />
                                     </div>
 
-                                    <div className="space-y-2">
+                                    <div className="space-y-2 text:black">
                                       <Label htmlFor="new-time">New Time</Label>
                                       <Input
                                         id="new-time"
@@ -336,7 +336,7 @@ export default function DashboardPage() {
                                   </DialogHeader>
 
                                   {selectedAppointment && (
-                                    <div className="bg-gray-50 p-4 rounded-lg my-4">
+                                    <div className="bg-gray-50 p-4 rounded-lg my-4 text:black">
                                       <p>
                                         <strong>Service:</strong> {selectedAppointment.serviceType}
                                       </p>

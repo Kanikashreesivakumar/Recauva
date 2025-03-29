@@ -40,7 +40,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
-    // Clear error when field is edited
+    
     if (errors[name]) {
       setErrors((prev) => {
         const newErrors = { ...prev }
@@ -112,7 +112,6 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
           duration: 5000,
         })
 
-        // Reset form and close modal
         setFormData({
           name: "",
           email: "",
@@ -221,7 +220,8 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                       className="space-y-4"
                     >
                       <div>
-                        <Label htmlFor="name">Full Name</Label>
+                        <div className="text-black font-semibold">
+                        <Label htmlFor="name">Full Name :</Label>
                         <Input
                           id="name"
                           name="name"
@@ -232,9 +232,12 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         />
                         {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                       </div>
+                      </div>
+                      
 
                       <div>
-                        <Label htmlFor="email">Email</Label>
+                        <div className="text-black font-semibold">
+                        <Label htmlFor="email">Email :</Label>
                         <Input
                           id="email"
                           name="email"
@@ -246,9 +249,11 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         />
                         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                       </div>
+                      </div>
 
                       <div>
-                        <Label htmlFor="phone">Phone Number</Label>
+                      <div className="text-black font-semibold">
+                        <Label htmlFor="phone">Phone Number :</Label>
                         <Input
                           id="phone"
                           name="phone"
@@ -259,9 +264,11 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         />
                         {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                       </div>
+                      </div>
 
                       <div>
-                        <Label htmlFor="address">Home Address</Label>
+                      <div className="text-black font-semibold">
+                        <Label htmlFor="address">Home Address :</Label>
                         <Input
                           id="address"
                           name="address"
@@ -272,9 +279,12 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         />
                         {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
                       </div>
+                      </div>
 
                       <div>
-                        <Label htmlFor="serviceType">Service Type</Label>
+                      <div className="text-black font-semibold">
+                        <Label htmlFor="serviceType">Service Type :</Label>
+                        </div>
                         <select
                           id="serviceType"
                           name="serviceType"
@@ -284,7 +294,8 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                             errors.serviceType ? "border-red-500" : "border-gray-300"
                           }`}
                         >
-                          <option value="">Select a service</option>
+                        
+                          <option value="">Select a service--> </option>
                           {serviceOptions.map((service) => (
                             <option key={service} value={service}>
                               {service}
@@ -295,17 +306,19 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                       </div>
 
                       <div>
+                      <div className="text-black font-semibold">
                         <Label>Is this your first physiotherapy session?</Label>
+                        </div>
                         <RadioGroup
                           value={formData.isFirstTime}
                           onValueChange={handleRadioChange}
                           className="flex space-x-4 mt-2"
                         >
-                          <div className="flex items-center space-x-2">
+                          <div className="flex items-center space-x-2 text-black">
                             <RadioGroupItem value="yes" id="yes" />
                             <Label htmlFor="yes">Yes</Label>
                           </div>
-                          <div className="flex items-center space-x-2">
+                          <div className="flex items-center space-x-2 text-black">
                             <RadioGroupItem value="no" id="no" />
                             <Label htmlFor="no">No</Label>
                           </div>
