@@ -347,7 +347,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="pt-24 pb-20 relative overflow-hidden">
+    <div className="pt-24 pb-20 relative overflow-hidden bg-[url('/rehab.jpeg?height=200&width=200')] bg-no-repeat bg-fixed bg-cover opacity-100">
       {}
       <AnimatedBlob color="#ACE1AF" size="400px" top="-200px" left="-200px" />
       <AnimatedBlob color="#FFB4A2" size="350px" bottom="-150px" right="-150px" delay={2} />
@@ -368,7 +368,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <TextReveal>
             <div className="relative rounded-2xl overflow-hidden mb-8 shadow-xl">
               <Image
-                src={post.image || "/placeholder.svg"}
+                src={post.image || "/rehab.jpeg"}
                 alt={post.title}
                 width={1200}
                 height={600}
@@ -381,31 +381,31 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <TextReveal>
             <div className="mb-8">
               <div className="flex flex-wrap gap-4 items-center mb-4">
-                <span className="inline-flex items-center text-black">
+                <span className="inline-flex items-center font-semibold text-black">
                   <Calendar className="mr-1 h-4 w-4" />
                   {post.date}
                 </span>
-                <span className="inline-flex items-center text-black">
+                <span className="inline-flex items-center font-semibold text-black">
                   <User className="mr-1 h-4 w-4" />
                   {post.author}
                 </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-reccova-green/10 to-reccova-mint/10 text-reccova-green">
+                <span className="inline-flex items-center text-black px-3 py-1 rounded-full bg-gradient-to-r from-reccova-green/50 to-reccova-mint/50 text-reccova-green">
                   <Tag className="mr-1 h-4 w-4" />
                   {post.category}
                 </span>
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text">{post.title}</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 gradient-text">{post.title}</h1>
 
-              <p className="text-xl text-black">{post.excerpt}</p>
+              <p className="text-xl text-black font-semibold">{post.excerpt}</p>
             </div>
           </TextReveal>
 
           {}
           <TextReveal>
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <div className="bg-[#F2EFE7] rounded-2xl text-black shadow-lg p-8 mb-8">
               <div
-                className="prose prose-lg max-w-none prose-headings:text-black prose-headings:font-semibold prose-p:text-gray-600 prose-a:text-reccova-green prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
+                className="prose prose-lg max-w-none prose-headings:text-white prose-headings:font-semibold prose-p:text-black prose-a:text-reccova-green prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
             </div>
@@ -413,16 +413,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
           {}
           <TextReveal>
-            <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-mint/5 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 mb-8">
+            <div className="bg-[#F2EFE7]  text-white from-reccova-green/5 to-reccova-mint/5 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 mb-8">
               <Image
                 src={post.authorImage || "/placeholder.svg"}
                 alt={post.author}
                 width={100}
                 height={100}
-                className="rounded-full border-4 border-white shadow-md"
+                className="rounded-full border-4 border-white shadow-md "
               />
               <div>
-                <h3 className="text-xl font-semibold mb-2">{post.author}</h3>
+                <h3 className="text-xl font-semibold text-black mb-2">{post.author}</h3>
                 <p className="text-black">{post.authorBio}</p>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           {}
           <TextReveal>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl shadow-lg p-6">
-              <span className="font-medium text-black text-black flex items-center">
+              <span className="font-medium text-black text-black font-semibold flex items-center">
                 <Share2 className="mr-2 h-5 w-5" />
                 Share this article
               </span>
