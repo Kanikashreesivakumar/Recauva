@@ -180,7 +180,7 @@ export default function Home() {
       <section className="py-24 bg-white relative overflow-hidden">
         {}
         <AnimatedBlob color="#FDDDE6" size="350px" top="-150px" right="-150px" delay={1} />
-        <AnimatedBlob color="ACE1AF" size="300px" bottom="-100px" left="-100px" delay={3} />
+        <AnimatedBlob color="#ACE1AF" size="300px" bottom="-100px" left="-100px" delay={3} />
 
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
