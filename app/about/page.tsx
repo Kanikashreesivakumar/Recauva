@@ -299,7 +299,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <TextReveal>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-4xl font-bold mb-6 text-black"><span className="gradient-text">Reccova</span> by the Numbers</h2>
+              <h2 className="text-4xl md:text-4xl font-bold mb-6 text-black"><span className="gradient-text">Recauva</span> by the Numbers</h2>
               <p className="text-2xl text-black max-w-3xl mx-auto font-semibold">
                 Our impact in numbers reflects our commitment to excellence in home physiotherapy care.
               </p>
@@ -347,7 +347,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal>
-              <h2 className="text-4xl md:text-4xl font-bold mb-6 text-black">Ready to Experience the <span className="gradient-text">Reccova</span> Difference?</h2>
+              <h2 className="text-4xl md:text-4xl font-bold mb-6 text-black">Ready to Experience the <span className="gradient-text">Recauva</span> Difference?</h2>
             </TextReveal>
 
             <TextReveal delay={0.1}>

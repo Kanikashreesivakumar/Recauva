@@ -218,7 +218,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -227,7 +227,7 @@ export default function ServicesPage() {
             </TextReveal>
 
             <TextReveal delay={0.1}>
-              <p className="text-xl text-gray-900 mb-12 font-bold">
+              <p className="text-xl text-black mb-12 font-bold">
                 Our expert team can help determine the best treatment approach for your specific condition. Contact us
                 for a consultation or book an initial assessment.
               </p>

@@ -15,8 +15,8 @@ export default function Home() {
     <>
       {}
       <ParallaxSection
-        bgImage="/reccova.jpeg?height=1080&width=1920"
-        overlayColor="rgba(64, 62, 62, 0.3)"
+        bgImage="/reccova.jpeg"
+        
         className="animated-bg"
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center">

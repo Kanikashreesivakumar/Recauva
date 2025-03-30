@@ -277,7 +277,7 @@ export default function ContactPage() {
       </section>
 
       {}
-      <section className="py-16">
+      <section className="py-16 bg-black">
         <div className="container mx-auto px-4 ">
           <TextReveal>
             <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Frequently Asked Questions</h2>

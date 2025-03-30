@@ -40,7 +40,6 @@ export default function LiveChat() {
   const handleSendMessage = () => {
     if (!message.trim()) return
 
-    // Add user message
     const userMessage = {
       sender: "user" as const,
       text: message,
@@ -50,7 +49,7 @@ export default function LiveChat() {
     setMessages((prev) => [...prev, userMessage])
     setMessage("")
 
-    // Simulate support response
+   
     setTimeout(() => {
       setIsTyping(true)
 
@@ -81,7 +80,7 @@ export default function LiveChat() {
 
   return (
     <>
-      {/* Chat Button */}
+      {}
       <motion.button
         className="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-reccova-green to-reccova-mint text-white rounded-full p-4 shadow-lg hover-glow"
         whileHover={{ scale: 1.1 }}
@@ -92,7 +91,7 @@ export default function LiveChat() {
         <MessageCircle size={24} />
       </motion.button>
 
-      {/* Chat Window */}
+      {}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -102,7 +101,7 @@ export default function LiveChat() {
             transition={{ type: "spring", damping: 25 }}
             className="fixed bottom-6 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-xl overflow-hidden"
           >
-            {/* Chat Header */}
+            {}
             <div className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white p-4 flex justify-between items-center">
               <div className="flex items-center">
                 <Avatar className="h-8 w-8 mr-2 border-2 border-white">
@@ -125,7 +124,7 @@ export default function LiveChat() {
               </motion.button>
             </div>
 
-            {/* Chat Messages */}
+            {}
             <div className="h-80 overflow-y-auto p-4 bg-gray-50">
               {messages.map((msg, index) => (
                 <motion.div
@@ -146,7 +145,7 @@ export default function LiveChat() {
                     className={`max-w-[80%] rounded-2xl p-3 ${
                       msg.sender === "user"
                         ? "bg-gradient-to-r from-reccova-green to-reccova-mint text-white"
-                        : "bg-white border border-gray-200"
+                        : "bg-white text-black border border-gray-200"
                     }`}
                   >
                     <p className="text-sm">{msg.text}</p>
@@ -192,7 +191,7 @@ export default function LiveChat() {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Chat Input */}
+            {}
             <div className="p-3 border-t">
               <form
                 className="flex items-center"

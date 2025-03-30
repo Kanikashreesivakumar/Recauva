@@ -243,7 +243,7 @@ export default function BlogPage() {
       </section>
 
       {}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#F2EFE7]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal>
