@@ -7,10 +7,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
 import type { Testimonial } from "@/lib/supabase"
 import { useScrollReveal } from "@/hooks/useScrollReveal"
+import BookingModal from "@/components/booking-modal"
 
 export default function TestimonialsPage() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([])
   const [isLoading, setIsLoading] = useState(true)
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -117,6 +119,7 @@ export default function TestimonialsPage() {
   }
 
   return (
+    <>
     <div className=" pt-24 pb-20 bg-[url('/serback.jpeg?height=200&width=200')] bg-no-repeat bg-fixed bg-cover opacity-100">
       <div className="container mx-auto px-4">
         {}
@@ -211,7 +214,7 @@ export default function TestimonialsPage() {
             Join our satisfied clients and start your journey to recovery with Recauva's professional physiotherapy
             services.
           </p>
-          <Button className="gradient-bg text-white hover:shadow-lg transition-all px-8 py-6 rounded-full text-lg">
+          <Button className="gradient-bg text-white hover:shadow-lg transition-all px-8 py-6 rounded-full text-lg"  onClick={() => setIsBookingModalOpen(true)}>
           
             Book a Session Now
            
@@ -219,6 +222,8 @@ export default function TestimonialsPage() {
         </div>
       </div>
     </div>
+    <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
+    </>
   )
 }
 
