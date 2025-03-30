@@ -94,7 +94,7 @@ const blogPosts = {
       <h2>Conclusion</h2>
       <p>Recovery after surgery takes time and patience, but incorporating appropriate exercises can significantly improve your outcomes. Remember to start slowly, listen to your body, and follow your healthcare provider's guidance. With consistency and proper technique, these ten exercises can help you regain your strength, mobility, and independence more quickly.</p>
     `,
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog1.jpeg?height=600&width=1200",
     date: "May 15, 2023",
     category: "Recovery Tips",
     author: "Dr. Sarah Johnson",
@@ -198,7 +198,7 @@ const blogPosts = {
       
       <p>At Reccova, our specialized physiotherapists are trained in evidence-based approaches to chronic pain management. We work closely with you to develop a personalized treatment plan that addresses your specific needs and helps you regain control over your life.</p>
     `,
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog2.jpeg?height=600&width=1200",
     date: "April 28, 2023",
     category: "Expert Advice",
     author: "Dr. Michael Chen",
@@ -320,7 +320,7 @@ const blogPosts = {
       
       <p>At Reccova, our physiotherapists can create personalized stretching programs tailored to your specific needs and goals. Whether you're recovering from an injury, managing chronic pain, or simply wanting to improve your mobility, we're here to support your journey to better health.</p>
     `,
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog3.jpeg?height=600&width=1200",
     date: "March 12, 2023",
     category: "Wellness",
     author: "Emily Rodriguez",
