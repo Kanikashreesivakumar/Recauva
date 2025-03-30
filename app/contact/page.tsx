@@ -286,7 +286,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
               <TextReveal delay={0.1}>
-                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-[#F2EFE7] p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-semibold text-black mb-3">How do I book a home physiotherapy session?</h3>
                   <p className="text-black">
                     You can book a session through our online booking system, by calling our office, or by sending us a
@@ -296,7 +296,7 @@ export default function ContactPage() {
               </TextReveal>
 
               <TextReveal delay={0.2}>
-                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-[#F2EFE7] p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-semibold text-black mb-3">What areas do you serve?</h3>
                   <p className="text-black">
                     We currently provide home physiotherapy services throughout the greater metropolitan area and
@@ -306,7 +306,7 @@ export default function ContactPage() {
               </TextReveal>
 
               <TextReveal delay={0.3}>
-                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-[#F2EFE7] p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-semibold text-black mb-3">Do I need a doctor's referral?</h3>
                   <p className="text-black">
                     While a doctor's referral is beneficial, it's not always required. We can assess your condition and
@@ -317,7 +317,7 @@ export default function ContactPage() {
               </TextReveal>
 
               <TextReveal delay={0.4}>
-                <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-[#F2EFE7] p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-semibold text-black mb-3">What should I expect during my first session?</h3>
                   <p className="text-black">
                     Your first session will include a comprehensive assessment of your condition, discussion of your
