@@ -26,13 +26,13 @@ export default function Home() {
             <div className="absolute -z-10 -bottom-20 -right-20 w-40 h-40 bg-reccova-violet/30 rounded-full blur-3xl"></div>
 
             <TextReveal>
-              <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-black mb-7">
+              <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-white mb-7">
               <span className="gradient-text">Recauva </span> - Your Homecare Physiotherapy Companion
               </h1>
             </TextReveal>
 
             <TextReveal delay={0.2}>
-              <p className="text-2xl text-black font-semibold mb-8">
+              <p className="text-2xl text-white font-semibold mb-8">
                 Professional physiotherapy services in the comfort of your home. No travel, no waiting rooms - just
                 quality care when and where you need it.
               </p>
