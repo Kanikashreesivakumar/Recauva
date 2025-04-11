@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -9,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Upload } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import BookingModal from "./booking-modal"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -60,44 +59,16 @@ export default function Navigation() {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <div className="relative">
-              {logoImage ? (
-                <img src={logoImage || "/placeholder.svg"} alt="Reccova Logo" className="h-12 w-auto object-contain" />
-              ) : (
-                <div className="relative">
-                  <motion.div
-                    className="absolute -z-10 w-12 h-12 rounded-full bg-reccova-green/30 blur-lg"
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.3, 0.5, 0.3],
-                    }}
-                    transition={{
-                      repeat: Number.POSITIVE_INFINITY,
-                      duration: 3,
-                      ease: "easeInOut",
-                    }}
-                  />
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    className="text-2xl font-bold gradient-text"
-                  >
-                    Recauva
-                  </motion.div>
-                </div>
-              )}
-
-              <label
-                htmlFor="logo-upload"
-                className="absolute -right-2 -bottom-2 bg-white rounded-full p-1 shadow-md cursor-pointer hover:bg-gray-50 transition-colors"
-                title="Upload Logo"
-              >
-                <Upload size={14} className="text-gray-500" />
-                <input id="logo-upload" type="file" accept="image/*" className="hidden" onChange={handleLogoUpload} />
-              </label>
+              <Image
+                src={isScrolled ? "/reccova logo.jpeg" : "/reccova logo.jpeg"}
+                alt="Reccova Logo"
+                width={150}
+                height={50}
+                className="h-10 w-auto object-contain"
+              />
             </div>
           </Link>
 
-          {}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -115,7 +86,6 @@ export default function Navigation() {
             </Button>
           </nav>
 
-          {}
           <button
             className="md:hidden text-gray-700 z-50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -26,13 +26,13 @@ export default function Home() {
             <div className="absolute -z-10 -bottom-20 -right-20 w-40 h-40 bg-reccova-violet/30 rounded-full blur-3xl"></div>
 
             <TextReveal>
-              <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-black mb-7">
+              <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-white mb-7">
               <span className="gradient-text">Recauva </span> - Your Homecare Physiotherapy Companion
               </h1>
             </TextReveal>
 
             <TextReveal delay={0.2}>
-              <p className="text-2xl text-black font-semibold mb-8">
+              <p className="text-2xl text-white font-semibold mb-8">
                 Professional physiotherapy services in the comfort of your home. No travel, no waiting rooms - just
                 quality care when and where you need it.
               </p>
@@ -86,8 +86,8 @@ export default function Home() {
 
             <TextReveal delay={0.2}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-violet/30 to-reccova-pink/30 p-4 rounded-full inline-flex mb-6">
-                  <Heart className="h-8 w-8 text-reccova-violet" />
+                <div className="bg-gradient-to-br from-reccova-green/30 to-reccova-pink/30 p-4 rounded-full inline-flex mb-6">
+                  <Heart className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-balck text-black">Comfort & Convenience</h3>
                 <p className="text-gray-900">Receive expert care in the comfort and privacy of your own home.</p>
@@ -96,8 +96,8 @@ export default function Home() {
 
             <TextReveal delay={0.3}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-pink/20 to-reccova-violet/20 p-4 rounded-full inline-flex mb-6">
-                  <Clock className="h-8 w-8 text-reccova-pink" />
+                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-violet/20 p-4 rounded-full inline-flex mb-6">
+                  <Clock className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-black">Flexible Scheduling</h3>
                 <p className="text-gray-900">Book appointments at times that work for your busy lifestyle.</p>
@@ -106,8 +106,8 @@ export default function Home() {
 
             <TextReveal delay={0.4}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-mint/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
-                  <Award className="h-8 w-8 text-reccova-mint" />
+                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
+                  <Award className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-black">Certified Experts</h3>
                 <p className="text-gray-900">All our physiotherapists are fully certified with years of experience.</p>
@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {}
-      <section className="py-24 bg-gradient-to-br from-white via-reccova-lightPink to-reccova-lightViolet">
+      <section className="py-24 bg-[#F2EFE7]">
         <div className="container mx-auto px-4">
           <TextReveal>
             <h2 className="text-4xl md:text-6xl font-bold text-center mb-6"><span className="gradient-text">What Our Patients Say</span></h2>
@@ -378,12 +378,12 @@ export default function Home() {
       
 
       {}
-      <section className="py-24 bg-gradient-to-br from-white via-reccova-lightGreen to-reccova-lightViolet relative overflow-hidden">
+      <section className="py-24 bg-gray overflow-hidden">
         {}
         <AnimatedBlob color="#FDDDE6" size="300px" top="-100px" right="-100px" />
         <AnimatedBlob color="#ACE1AF" size="250px" bottom="-80px" left="-80px" delay={2} />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 bg-gray">
           <TextReveal>
             <h2 className="text-6xl md:text-6xl font-bold text-black text-center mb-6">Latest from Our Blog</h2>
           </TextReveal>

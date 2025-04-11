@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function LoadingAnimation() {
   const [progress, setProgress] = useState(0)
@@ -49,8 +50,20 @@ export default function LoadingAnimation() {
           transition={{ duration: 0.5 }}
           className="mb-8 text-center"
         >
-          <div className="text-5xl font-bold gradient-text">Recauva</div>
-          <div className="text-lg lg:text-1xl text-black font-semibold">Recovery is more than just healing</div>
+          <Image 
+            src="/reccova logo.jpeg" 
+            alt="Reccova Logo" 
+            width={200} 
+            height={70} 
+            className="mx-auto mb-4"
+            priority 
+          />
+          <div className="text-xl lg:text-2xl text-black font-semibold">
+            Home Physiotherapy Services
+          </div>
+          <div className="text-lg text-gray-600 mt-2">
+            Recovery is more than just healing
+          </div>
         </motion.div>
       </div>
 
@@ -64,7 +77,7 @@ export default function LoadingAnimation() {
       </div>
 
       <motion.p
-        className="mt-4 text-black lg:text-1xl font-semibold"
+        className="mt-4 text-gray-600 font-medium"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}

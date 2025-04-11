@@ -54,10 +54,13 @@ const config: Config = {
         },
         
         reccova: {
-          green: "#ACE1AF",
-          pink: "#E6B2BA",
-          violet: "#E9A5F1",
-          mint: "#80CBC4",
+          green: "#7AC143",
+          darkGreen: "#5A9D32",
+          lightGreen: "#9ED66B",
+          black: "#000000",
+          white: "#FFFFFF",
+          gray: "#F5F5F5",
+          lightGray: "#FAFAFA",
         },
       },
       borderRadius: {

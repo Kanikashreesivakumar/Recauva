@@ -130,12 +130,12 @@ export default function ContactPage() {
 
             <TextReveal delay={0.1}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-violet/20 to-reccova-pink/20 p-4 rounded-full inline-flex mb-6">
-                  <Phone className="h-8 w-8 text-reccova-violet" />
+                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
+                  <Phone className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Phone</h3>
                 <p className="text-black font-semibold">
-                  <a href="tel:+916383791589" className="hover:text-reccova-violet transition-colors">
+                  <a href="tel:+916383791589" className="hover:text-reccova-green transition-colors">
                     +91 6383791589
                   </a>
                 </p>
@@ -144,12 +144,12 @@ export default function ContactPage() {
 
             <TextReveal delay={0.2}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-pink/20 to-reccova-violet/20 p-4 rounded-full inline-flex mb-6">
-                  <Mail className="h-8 w-8 text-reccova-pink" />
+                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
+                  <Mail className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Email</h3>
                 <p className="text-black font-semibold">
-                  <a href="mailto:info@reccova.com" className="hover:text-reccova-pink transition-colors">
+                  <a href="mailto:info@reccova.com" className="hover:text-reccova-green transition-colors">
                     mukil@gmail.com
                   </a>
                 </p>
@@ -158,8 +158,8 @@ export default function ContactPage() {
 
             <TextReveal delay={0.3}>
               <div className="bg-[#F2EFE7] p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow card-hover">
-                <div className="bg-gradient-to-br from-reccova-mint/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
-                  <Clock className="h-8 w-8 text-reccova-mint" />
+                <div className="bg-gradient-to-br from-reccova-green/20 to-reccova-green/20 p-4 rounded-full inline-flex mb-6">
+                  <Clock className="h-8 w-8 text-reccova-green" />
                 </div>
                 <h3 className="text-xl text-black font-semibold mb-3">Hours</h3>
                 <p className="text-black font-semibold">
