@@ -7,82 +7,7 @@ import { Button } from "@/components/ui/button"
 import TextReveal from "@/components/text-reveal"
 
 const services = [
-  
-  {
-    id: "rehabilitation",
-    title: "Rehabilitation Therapy",
-    description:
-      "Our rehabilitation therapy is designed to help patients recover from surgeries, injuries, or medical conditions that have impacted their mobility and function. Our therapists work closely with you to develop a personalized recovery plan that addresses your specific needs and goals.",
-    image: "/rehab1.jpeg?height=600&width=800",
-    features: [
-      "Post-surgery recovery programs",
-      "Injury rehabilitation",
-      "Functional mobility training",
-      "Pain management techniques",
-      "Progressive exercise programs",
-      "Regular progress assessments",
-    ],
-  },
-  {
-    id: "sports-injury",
-    title: "Sports Injury Treatment",
-    description:
-      "Athletes and active individuals require specialized care to recover from sports-related injuries and return to their activities safely. Our sports injury treatment focuses on addressing the specific demands of your sport or activity while promoting proper healing and preventing future injuries.",
-    image: "/sport3.jpeg?height=600&width=800",
-    features: [
-      "Sport-specific rehabilitation",
-      "Biomechanical analysis",
-      "Strength and conditioning programs",
-      "Injury prevention strategies",
-      "Return-to-sport assessments",
-      "Performance enhancement techniques",
-    ],
-  },
-  {
-    id: "geriatric-care",
-    title: "Geriatric Physiotherapy",
-    description:
-      "Our geriatric physiotherapy services are tailored to address the unique needs of older adults. We focus on improving mobility, reducing pain, preventing falls, and enhancing overall quality of life through gentle yet effective therapeutic approaches.",
-    image: "/gene1.jpeg?height=600&width=800",
-    features: [
-      "Balance and gait training",
-      "Fall prevention strategies",
-      "Arthritis management",
-      "Gentle strengthening exercises",
-      "Mobility assistance",
-      "Adaptive equipment recommendations",
-    ],
-  },
-  {
-    id: "neurological",
-    title: "Neurological Therapy",
-    description:
-      "For individuals with neurological conditions such as stroke, Parkinson's disease, or multiple sclerosis, our specialized neurological therapy aims to improve function, mobility, and independence through targeted interventions and exercises.",
-    image: "/neu1.jpeg?height=600&width=800",
-    features: [
-      "Neuromuscular re-education",
-      "Functional movement training",
-      "Coordination exercises",
-      "Balance rehabilitation",
-      "Adaptive strategy development",
-      "Caregiver education and support",
-    ],
-  },
-  {
-    id: "pediatric",
-    title: "Pediatric Therapy",
-    description:
-      "Our pediatric physiotherapy services are designed to help children with developmental delays, injuries, or medical conditions improve their motor skills, strength, and mobility in a fun and engaging environment.",
-    image: "/neu.jpeg?height=600&width=800",
-    features: [
-      "Developmental milestone achievement",
-      "Motor skill development",
-      "Play-based therapy approaches",
-      "Sensory integration activities",
-      "Parent/caregiver education",
-      "School-based intervention strategies",
-    ],
-  },
+
   {
     id: "pain-management",
     title: "Pain Management",
@@ -98,20 +23,160 @@ const services = [
       "Relaxation and stress reduction techniques",
     ],
   },
+  {
+    id: "home-care",
+    title: "Home Care Physiotherapy",
+    description:
+      "Our home care physiotherapy service brings expert care directly to your doorstep—ideal for individuals with mobility challenges, post-surgery recovery needs, or those who simply prefer healing in the comfort of their home.",
+    image: "/homecare.jpg?height=600&width=800",
+    features: [
+      "Personalized physiotherapy assessments at home",
+      "Customized rehabilitation programs",
+      "Post-operative recovery support",
+      "Fall prevention strategies and balance training",
+      "Safe exercise plans and posture correction",
+      "Pre-operative recovery support",
+    ],
+  },
+  {
+    id: "Women-fitness",
+    title: "Women fitness",
+    description:
+      "Our women-focused physiotherapy and fitness programs are designed to support every stage of life—from postnatal recovery to hormonal changes and beyond. We help women build strength, improve mobility, and feel confident in their bodies.",
+    image: "/fitness.jpeg?height=600&width=800",
+    features: [
+      "Core stability and abdominal muscle training",
+      "Prenatal exercise guidance and safe movement routines",
+      "Weight management support with physiotherapist-led fitness",
+      "Stretching and flexibility programs",
+      "Hormonal balance support through therapeutic exercise",
+      "Stress-relief techniques and guided breathing sessions",
+    ],
+  },
+
+  {
+    id: "sports-injury",
+    title: "Sports Injury Rehabilitation",
+    description:
+      "Athletes and active individuals require specialized care to recover from sports-related injuries and return to their activities safely. Our sports injury treatment focuses on addressing the specific demands of your sport or activity while promoting proper healing and preventing future injuries.",
+    image: "/sport3.jpeg?height=600&width=800",
+    features: [
+      "Sport-specific rehabilitation",
+      "Biomechanical analysis",
+      "Strength and conditioning programs",
+      "Injury prevention strategies",
+      "Return-to-sport assessments",
+      "Performance enhancement techniques",
+    ],
+  },
+  
+  {
+    id: "neurological",
+    title: "Neurological Rehabilitation",
+    description:
+      "For individuals with neurological conditions such as stroke, Parkinson's disease, or multiple sclerosis, our specialized neurological therapy aims to improve function, mobility, and independence through targeted interventions and exercises.",
+    image: "/geriatric.jpeg?height=600&width=800",
+    features: [
+      "Neuromuscular re-education",
+      "Functional movement training",
+      "Coordination exercises",
+      "Balance rehabilitation",
+      "Adaptive strategy development",
+      "Caregiver education and support",
+    ],
+  },
+  {
+    id: "pediatric",
+    title: "Pediatric Rehabilitation",
+    description:
+      "Our pediatric physiotherapy services are designed to help children with developmental delays, injuries, or medical conditions improve their motor skills, strength, and mobility in a fun and engaging environment.",
+    image: "/neu.jpeg?height=600&width=800",
+    features: [
+      "Developmental milestone achievement",
+      "Motor skill development",
+      "Play-based therapy approaches",
+      "Sensory integration activities",
+      "Parent/caregiver education",
+      "School-based intervention strategies",
+    ],
+  },
+  {
+    id: "operative-rehabilitation",
+    title: "Pre  post operative Rehabilitation",
+    description:
+      "Our specialized rehabilitation programs are tailored to prepare your body before surgery and accelerate recovery afterward. We focus on restoring strength, mobility, and confidence while minimizing pain and complications.",
+    image: "/pre.jpg?height=600&width=800",
+    features: [
+      "Pre-operative physiotherapy to strengthen muscles and joints",
+      "Post-surgical pain and inflammation management",
+      "Muscle re-education and strengthening exercises",
+      "Scar tissue management and soft tissue mobilization",
+      "Personalized home exercise programs for long-term recovery",
+      "Gait training and mobility support",
+    ],
+  },
+  
+  
+  {
+    id: "cardio-rehabilitation",
+    title: "Cardio respiratory Rehabilitation",
+    description:
+      "Our cardio-respiratory rehab program is designed to help individuals with heart and lung conditions regain endurance, improve breathing efficiency, and enhance overall quality of life through safe and guided physiotherapy.",
+    image: "/respi.jpg?height=600&width=800",
+    features: [
+      "Breathing exercises to improve lung capacity",
+      "Airway clearance techniques and chest physiotherapy",
+      "Endurance and aerobic conditioning programs",
+      "Pulmonary rehabilitation for asthma, COPD, and bronchitis",
+      "Cardiac rehab after heart surgery or cardiac events",
+      "Monitoring and education for safe physical activity",
+    ],
+  },
+  
+  {
+    id: "pelvic-rehab",
+    title: "Pelvic floor Rehabilitation",
+    description:
+      "Our pelvic floor rehab program is designed to support individuals dealing with pelvic pain, incontinence, or core instability. We provide discreet, evidence-based care to restore pelvic function, improve strength, and enhance confidence.",
+    image: "/floor.jpeg?height=600&width=800",
+    features: [
+      "Comprehensive pelvic floor assessment",
+      "Strengthening exercises for pelvic muscles",
+      "Management of urinary incontinence and pelvic organ prolapse",
+      "Biofeedback training for muscle awareness",
+      "Core stabilization and posture correction",
+      "Postnatal pelvic recovery and bladder control support",
+    ],
+  },
+  {
+    id: "geriatric-care",
+    title: "Geriatric Physiotherapy",
+    description:
+      "Our geriatric physiotherapy services are tailored to address the unique needs of older adults. We focus on improving mobility, reducing pain, preventing falls, and enhancing overall quality of life through gentle yet effective therapeutic approaches.",
+    image: "/neu1.jpeg?height=600&width=800",
+    features: [
+      "Balance and gait training",
+      "Fall prevention strategies",
+      "Arthritis management",
+      "Gentle strengthening exercises",
+      "Mobility assistance",
+      "Adaptive equipment recommendations",
+    ],
+  },
 ]
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20 bg-black bg-gray/200   opacity-90">
+    <div className="pt-24 pb-20 bg-white bg-gray/200   opacity-90">
       {}
-      <section className="bg-reccova-900 text-white py-16 ">
+      <section className="bg-reccova-900 text-black py-16 ">
         <div className="container mx-auto px-4 ">
           <TextReveal>
             <h1 className="text-6xl md:text-7xl font-bold mb-6 text-center"><span className="gradient-text">Our Services</span></h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
-            <p className="text-4xl max-w-5xl mx-auto text-center mb-10 text-white font-bold mb-4">
+            <p className="text-4xl max-w-5xl mx-auto text-center mb-10 text-black font-bold mb-4">
               Discover our comprehensive range of physiotherapy services, all delivered in the comfort of your home by
               our expert therapists.
             </p>

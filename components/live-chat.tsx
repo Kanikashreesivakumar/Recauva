@@ -109,7 +109,7 @@ export default function LiveChat() {
                   <AvatarFallback>RC</AvatarFallback>
                 </Avatar>
                 <div>
-                  <h3 className="font-medium">Reccova Support</h3>
+                  <h3 className="font-medium">Recauva Support</h3>
                   <p className="text-xs text-white/80">Online</p>
                 </div>
               </div>

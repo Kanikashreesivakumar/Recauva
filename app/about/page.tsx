@@ -339,7 +339,7 @@ export default function AboutPage() {
       </section>
 
       {}
-      <section className="py-16 bg-reccova-green/80 from-reccova-green to-reccova-mint text-white relative overflow-hidden">
+      <section className="py-16 bg-reccova-green/50 from-reccova-green to-reccova-mint text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>

@@ -18,10 +18,10 @@ interface AppointmentData {
 let appointments: AppointmentData[] = []
 
 export async function bookAppointment(data: AppointmentData) {
-  // Simulate server processing time
+ 
   await new Promise((resolve) => setTimeout(resolve, 1500))
 
-  // In a real app, you would save this to a database
+
   const appointment = {
     id: Date.now().toString(),
     ...data,
@@ -31,7 +31,6 @@ export async function bookAppointment(data: AppointmentData) {
 
   appointments.push(data)
 
-  // Revalidate the dashboard page to show the new appointment
   revalidatePath("/dashboard")
 
   return { success: true, appointment }
@@ -71,7 +70,7 @@ export async function rescheduleAppointment(id: string, newDate: string, newTime
     }
   }
 
-  // Revalidate the dashboard page to show the updated appointments
+
   revalidatePath("/dashboard")
 
   return { success: true }

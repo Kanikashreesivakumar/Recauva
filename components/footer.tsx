@@ -53,7 +53,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links Section */}
           <div>
             <h4 className="text-lg font-semibold mb-6 text-black">Quick Links</h4>
             <ul className="space-y-3">
@@ -68,7 +67,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     className="text-black hover:text-gray-900 transition-colors flex items-center"
-                  >
+                    >
                     <span className={`bg-reccova-${link.color}/10 w-2 h-2 rounded-full mr-2`}></span>
                     {link.text}
                   </Link>
@@ -77,17 +76,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services Section */}
+          {}
           <div>
             <h4 className="text-lg font-semibold mb-6 text-black">Services</h4>
             <ul className="space-y-3">
               {[
-                { href: "#rehabilitation", text: "Rehabilitation" },
-                { href: "#sports-injury", text: "Sports Injury" },
+
+                { herf: "#pain-management", text:"Pain management"},
+                { href: "#Women-fitness", text: "Women fitness"},
+                { href: "#home-care", text:"Home Care Services"},
+                { href: "#sports-injury", text: "Sports Injury rehabilitation" },
+                { href: "#neurological", text: "Neurological rehabilitation" },
+                { href: "#pediatric", text: "Pediatric rehabilitation" },
+                { href: "#operative-rehabilitation", text: "Pre post operative rehabilitation"},
+                { href: "#cardio-rehabilitation", text: "Cardio respiratory rehabilitation"},
+                { href: "#pelvic-rehab", text: "Pelvic floor rehabilitation"},
                 { href: "#geriatric-care", text: "Geriatric Care" },
-                { href: "#neurological", text: "Neurological Therapy" },
-                { href: "#pediatric", text: "Pediatric Therapy" },
-              ].map((service) => (
+              ]
+              .map((service) => (
                 <li key={service.href}>
                   <Link
                     href={`/services${service.href}`}
@@ -100,32 +106,31 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Contact Section */}
+  
           <div>
             <h4 className="text-lg font-semibold mb-6 text-black">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin size={18} className="mr-3 text-reccova-green mt-1 flex-shrink-0" />
-                <span className="text-black">Madiwala, Bangalore, Karnataka, India</span>
+                <MapPin size={18} className="mr-3  mt-1 flex-shrink-0" />
+                <span className="text-black">No 471/26, Chinnaelasa giri,Thanigai nagar, Hanumanth nagar, Hosur, Tamilnadu 635126</span>
               </li>
               <li className="flex items-center">
-                <Phone size={18} className="mr-3 text-reccova-violet flex-shrink-0" />
-                <a href="tel:+916383791589" className="text-black hover:text-gray-900 transition-colors">
-                  +91 6383791589
+                <Phone size={18} className="mr-3  flex-shrink-0" />
+                <a href="tel:+917204538343" className="text-black hover:text-gray-900 transition-colors">
+                  +91  72045 38343
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail size={18} className="mr-3 text-reccova-pink flex-shrink-0" />
-                <a href="mailto:mukil@gmail.com" className="text-black hover:text-gray-900 transition-colors">
-                  mukil@gmail.com
+                <Mail size={18} className="mr-3 flex-shrink-0" />
+                <a href="mailto:Recauva@gmail.com" className="text-black hover:text-gray-900 transition-colors">
+                Recauva@gmail.com
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Footer Bottom */}
+        {}
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-black mb-4 md:mb-0">

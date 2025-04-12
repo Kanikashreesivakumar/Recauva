@@ -121,9 +121,9 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Our Location</h3>
                 <p className="text-black font-semibold">
-                  Madiwala
+                No 471/26, Chinnaelasa giri, Thanigai nagar, Hanumanth nagar,
                   <br />
-                  Bangalore,India
+                 Hosur,Tamilnadu 635126
                 </p>
               </div>
             </TextReveal>
@@ -135,8 +135,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Phone</h3>
                 <p className="text-black font-semibold">
-                  <a href="tel:+916383791589" className="hover:text-reccova-green transition-colors">
-                    +91 6383791589
+                  <a href="tel:+917204538343" className="hover:text-reccova-green transition-colors">
+                    +91  72045 38343
                   </a>
                 </p>
               </div>
@@ -149,8 +149,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Email</h3>
                 <p className="text-black font-semibold">
-                  <a href="mailto:info@reccova.com" className="hover:text-reccova-green transition-colors">
-                    mukil@gmail.com
+                  <a href="mailto:Recauva@gmail.com" className="hover:text-reccova-green transition-colors">
+                  Recauva@gmail.com
                   </a>
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function ContactPage() {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="name@example.com"
                         className={`rounded-lg ${errors.email ? "border-red-500" : ""}`}
                       />
                       {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
