@@ -117,7 +117,7 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div

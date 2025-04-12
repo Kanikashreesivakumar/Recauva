@@ -145,6 +145,8 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
     "Pediatric Therapy",
     "Post-Surgery Recovery",
     "Pain Management",
+    "Fitness",
+    "Cardio Rehabilitation",
   ]
 
   return (
