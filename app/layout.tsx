@@ -26,10 +26,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <LoadingAnimation />
           <Navigation />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen ">{children}</main>
           <Footer />
           <Toaster />
           <LiveChat />
