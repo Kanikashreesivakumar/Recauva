@@ -12,12 +12,13 @@ const services = [
     id: "pain-management",
     title: "Pain Management",
     description:
-      "Our comprehensive pain management approach combines various therapeutic techniques to help reduce chronic pain, improve function, and enhance quality of life without relying solely on medication.",
+      "Our comprehensive pain management approach combines various therapeutic techniques to help reduce Neck pain,shoulder pain,back pain,knee pain,ankle & foot pain improve function, and enhance quality of life without relying solely on medication.",
     image: "/pain.jpeg?height=600&width=800",
     features: [
       "Manual therapy techniques",
       "Therapeutic exercises",
-      "Modality treatments (heat, cold, electrical stimulation)",
+      "Modality treatments (Hot pack therapy, Cryotherapy,IFT,Ultrasound therapy,TENS)",
+      "Advance techniques (Streching,Tapping,Myofacial release,Dry kneedling,Cupping,Muscle Stregnthening)",
       "Ergonomic assessments and recommendations",
       "Self-management strategies",
       "Relaxation and stress reduction techniques",
@@ -58,7 +59,7 @@ const services = [
     id: "sports-injury",
     title: "Sports Injury Rehabilitation",
     description:
-      "Athletes and active individuals require specialized care to recover from sports-related injuries and return to their activities safely. Our sports injury treatment focuses on addressing the specific demands of your sport or activity while promoting proper healing and preventing future injuries.",
+      "Athletes and active individuals require specialized care to recover from sports-related injuries surgeries & return to their games safely. Our sports injury treatment focuses on addressing the specific demands of your sport or activity while promoting proper healing and preventing future injuries",
     image: "/sport3.jpeg?height=600&width=800",
     features: [
       "Sport-specific rehabilitation",
@@ -74,7 +75,7 @@ const services = [
     id: "neurological",
     title: "Neurological Rehabilitation",
     description:
-      "For individuals with neurological conditions such as stroke, Parkinson's disease, or multiple sclerosis, our specialized neurological therapy aims to improve function, mobility, and independence through targeted interventions and exercises.",
+      "For individuals with neurological conditions such as stroke, Parkinson's disease, or multiple sclerosis, our specialized neurological rehabilitation aims to improve function, mobility, and independence on their ADL through targeted interventions and exercises.",
     image: "/geriatric.jpeg?height=600&width=800",
     features: [
       "Neuromuscular re-education",

@@ -27,14 +27,13 @@ export default function Home() {
 
             <TextReveal>
               <h1 className="text-5xl md:text-5xl lg:text-5xl font-bold text-white mb-7">
-              <span className="gradient-text">Recauva </span> - Your Homecare Physiotherapy Companion
+              <span className="gradient-text">Recauva </span> - Your Comprehensive Physio Care
               </h1>
             </TextReveal>
 
             <TextReveal delay={0.2}>
               <p className="text-2xl text-white font-semibold mb-8">
-                Professional physiotherapy services in the comfort of your home. No travel, no waiting rooms - just
-                quality care when and where you need it.
+                Recauva is a Fastest Growing Physiotherapy service that delivers expert care through Innovation,Compassion and a Patient-First approach Our service available in OPD,Homecare & Tele-Rehab for remote areas
               </p>
             </TextReveal>
 
@@ -145,7 +144,7 @@ export default function Home() {
 
               <TextReveal delay={0.2}>
                 <p className="text-black lg:text-1xl font-semibold mb-6">
-                  At Reccova, we believe that healing happens best in comfortable, familiar environments. That's why
+                  At Recauva, we believe that healing happens best in comfortable, familiar environments. That's why
                   we've reimagined physiotherapy services by bringing them directly to your home.
                 </p>
               </TextReveal>
@@ -313,7 +312,7 @@ export default function Home() {
 
           <TextReveal delay={0.1}>
             <p className="text-black  lg:text-3xl font-semibold text-center max-w-3xl mx-auto mb-12">
-              Don't just take our word for it. Hear from our patients who have experienced the Reccova difference.
+              Don't just take our word for it. Hear from our patients who have experienced the Recauva difference.
             </p>
           </TextReveal>
 

@@ -25,8 +25,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-black mb-6">
-              Professional physiotherapy services in the comfort of your home. We bring healing to your doorstep with
-              personalized care and expert therapists.
+            
+             Recauva managed through a comprehensive physiotherapy approach that combined multiple discipline to ensure holistic recovery 
             </p>
             <div className="flex space-x-4">
               <a

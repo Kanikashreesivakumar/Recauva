@@ -196,7 +196,7 @@ const blogPosts = {
       <h2>Conclusion</h2>
       <p>Managing chronic pain effectively requires a comprehensive, individualized approach. By combining physical interventions, psychological strategies, and lifestyle modifications, many people can experience significant improvements in their pain levels and quality of life.</p>
       
-      <p>At Reccova, our specialized physiotherapists are trained in evidence-based approaches to chronic pain management. We work closely with you to develop a personalized treatment plan that addresses your specific needs and helps you regain control over your life.</p>
+      <p>At Recauva, our specialized physiotherapists are trained in evidence-based approaches to chronic pain management. We work closely with you to develop a personalized treatment plan that addresses your specific needs and helps you regain control over your life.</p>
     `,
     image: "/blog2.jpeg?height=600&width=1200",
     date: "April 28, 2023",
@@ -204,7 +204,7 @@ const blogPosts = {
     author: "Dr. Michael Chen",
     authorImage: "/placeholder.svg?height=80&width=80",
     authorBio:
-      "Dr. Michael Chen is a pain management specialist at Reccova with expertise in treating chronic pain conditions using an integrative approach combining physical therapy, education, and lifestyle modifications.",
+      "Dr. Michael Chen is a pain management specialist at Recauva with expertise in treating chronic pain conditions using an integrative approach combining physical therapy, education, and lifestyle modifications.",
   },
   "benefits-of-stretching": {
     title: "The Benefits of Regular Stretching for All Ages",
