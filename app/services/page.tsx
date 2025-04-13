@@ -11,7 +11,7 @@ import BookingModal from "@/components/booking-modal"
 const services = [
 
   {
-    id: "pain-management",
+    id: "Pain-management",
     title: "Pain Management",
     description:
       "Our comprehensive pain management approach combines various therapeutic techniques to help reduce Neck pain,shoulder pain,back pain,knee pain,ankle & foot pain improve function, and enhance quality of life without relying solely on medication.",
@@ -170,6 +170,7 @@ const services = [
 
 export default function ServicesPage() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
+  const [selectedService, setSelectedService] = useState("")
   return (
     <div className="pt-24 pb-20 bg-white bg-gray/200   opacity-90">
       {}
@@ -260,24 +261,15 @@ export default function ServicesPage() {
                   </TextReveal>
 
                   <TextReveal delay={0.4}>
-                    <Button className="hover-glow bg-reccova-1000 hover:bg-reccova-1000 bg-black text-white" asChild>
-                    
-                      <Link
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault()
-                          document.dispatchEvent(
-                            new CustomEvent("open-booking-modal", {
-                              detail: { serviceType: service.title },
-                            }),
-                          )
-                        }}
-                      >
-                       
-                        Book This Service
-                        <ArrowRight className="ml-2 h-4 w-4"/>
-                        
-                      </Link>
+                    <Button 
+                      className="hover-glow bg-reccova-1000 hover:bg-reccova-1000 bg-black text-white"
+                      onClick={() => {
+                        setSelectedService(service.title)
+                        setIsBookingModalOpen(true)
+                      }}
+                    >
+                      Book This Service
+                      <ArrowRight className="ml-2 h-4 w-4"/>
                     </Button>
                   </TextReveal>
                 </div>
@@ -313,7 +305,7 @@ export default function ServicesPage() {
 
                 <Button
                   variant="outline"
-                  className="hover-glow border-reccova-600 text-reccova-600 hover:bg-reccova-50"
+                  className="hover-glow border-reccova-green/50 bg-reccova-green/50 text-black hover:bg-reccova-green/50"
                   asChild
                 >
                   <Link href="/contact">Contact Us</Link>
@@ -323,7 +315,11 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)}
+        serviceType={selectedService}
+      />
     </div>
   )
 }

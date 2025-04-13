@@ -1,10 +1,10 @@
 "use server"
 
 import { revalidatePath } from "next/cache"
-import { EmailTemplate } from '../components/email-template'
+import { EmailTemplate } from '@/components/email-template'
 import { Resend } from 'resend'
 
-const resend = new Resend('re_YOUR_RESEND_API_KEY')
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 interface AppointmentData {
   name: string
@@ -15,64 +15,57 @@ interface AppointmentData {
   date: string
   time: string
   message: string
-  isFirstTime: string
+  isFirstTime: boolean
   updatedAt?: string
+  isConfirmation?: boolean
 }
 
 let appointments: AppointmentData[] = []
 
-export async function bookAppointment(data: AppointmentData) {
+export async function bookAppointment(formData: AppointmentData) {
   await new Promise((resolve) => setTimeout(resolve, 1500))
 
   const appointment = {
     id: Date.now().toString(),
-    ...data,
+    ...formData,
     status: "confirmed",
     createdAt: new Date().toISOString(),
   }
 
-  appointments.push(data)
+  appointments.push(formData)
 
   revalidatePath("/dashboard")
 
   try {
-    
-    await resend.emails.send({
-      from: 'Reccova <Recauva@gmail.com>',
-      to: ['Recauva@gmail.com'],
-      subject: 'New Appointment Booking',
-      react: await EmailTemplate({ 
-        customerName: data.name,
-        appointmentDate: data.date,
-        appointmentTime: data.time,
-        serviceType: data.serviceType,
-        customerPhone: data.phone,
-        customerEmail: data.email,
-        customerAddress: data.address,
-        message: data.message
-      })
-    })
 
-   
     await resend.emails.send({
-      from: 'Reccova <Recauva@gmail.com>',
-      to: [data.email],
-      subject: 'Appointment Confirmation',
-      react: await EmailTemplate({
-        ...data,
-        isConfirmation: true,
-        customerName: "",
-        appointmentDate: "",
-        appointmentTime: "",
-        customerPhone: "",
-        customerEmail: "",
-        customerAddress: ""
-      })
-    })
+      from: 'Recauva Appointments <appointments@yourdomain.com>',
+      to: process.env.ADMIN_EMAIL || 'default@yourdomain.com',
+      subject: `New Appointment: ${formData.name} - ${formData.serviceType}`,
+      react: EmailTemplate({ 
+        appointment: { 
+          ...formData, 
+          isFirstTime: formData.isFirstTime === 'true' 
+        } 
+      }),
+    });
+
+
+    await resend.emails.send({
+      from: 'Recauva <appointments@yourdomain.com>',
+      to: formData.email,
+      subject: 'Your Physiotherapy Appointment Confirmation',
+      react: EmailTemplate({ 
+        appointment: {
+          ...formData,
+          isConfirmation: true
+        }
+      }),
+    });
 
     return { success: true, appointment }
   } catch (error) {
-    console.error('Error booking appointment:', error)
+    console.error('Booking error:', error)
     throw new Error('Failed to book appointment')
   }
 }

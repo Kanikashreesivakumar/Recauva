@@ -375,7 +375,7 @@ export default function AboutPage() {
 
                 <Button
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg"
+                  className="border-green text-black hover:bg-black/10 rounded-full px-8 py-6 text-lg"
                   asChild
                 >
                   <Link href="/contact">Contact Us</Link>

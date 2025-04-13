@@ -62,9 +62,9 @@ export default function Navigation() {
               <Image
                 src={isScrolled ? "/recauva-logo.png" : "/recauva-logo.png"}
                 alt="Reccova Logo"
-                width={150}
-                height={50}
-                className="object-contain"
+                width={170}
+                height={70}
+                className="h-25 w-25 object-contain"
               />
             </div>
           </Link>

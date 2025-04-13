@@ -107,8 +107,8 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
         await bookAppointment(formData)
 
         toast({
-          title: "Appointment Booked!",
-          description: `Your appointment has been scheduled for ${formData.date} at ${formData.time}. We'll send a confirmation to your email.`,
+          title: "Appointment Request Sent!",
+          description: "We'll contact you shortly to confirm your appointment.",
           duration: 5000,
         })
 

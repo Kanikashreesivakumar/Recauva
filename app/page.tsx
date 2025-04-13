@@ -51,7 +51,7 @@ export default function Home() {
 
                 <Button
                   variant="outline"
-                  className="bg-reccova-violet/10 hover:bg-reccova-green/40 text-black border-gradient px-8 py-6 text-lg rounded-full backdrop-blur-sm"
+                  className="bg-reccova-green/10 hover:bg-reccova-green/40 text-green border-gradient px-8 py-6 text-lg rounded-full backdrop-blur-sm"
                   asChild
                 >
                   <Link href="/services">Our Services</Link>
@@ -291,14 +291,14 @@ export default function Home() {
           <TextReveal delay={0.5}>
             <div className="text-center mt-12">
               <Button
-                className="bg-black from-reccova-pink to-reccova-mint hover:from-reccova-mint hover:to-reccova-pink text-black rounded-full px-8 py-6"
+                className="bg-black from-reccova-pink to-reccova-mint hover:from-reccova-green text-black rounded-full px-8 py-6"
                 asChild
               >
                 <Link href="/services">
-                <span className="gradient-text">
+                <span className="text-white">
                   View All Services
                   </span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4 text-white" />
                 </Link>
               </Button>
             </div>
@@ -441,7 +441,7 @@ export default function Home() {
                   </p>
                   <Button
                     variant="outline"
-                    className="border-reccova-violet text-reccova-violet hover:bg-reccova-violet/5 rounded-full"
+                    className="border-reccova-green text-reccova-green hover:bg-reccova-green/5 rounded-full"
                     asChild
                   >
                     <Link href="/blog/chronic-pain-management">
@@ -472,7 +472,7 @@ export default function Home() {
                   </p>
                   <Button
                     variant="outline"
-                    className="border-reccova-pink text-reccova-pink hover:bg-reccova-pink/5 rounded-full"
+                    className="border-reccova-green text-reccova-green hover:bg-reccova-green/5 rounded-full"
                     asChild
                   >
                     <Link href="/blog/benefits-of-stretching">

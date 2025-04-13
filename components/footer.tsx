@@ -18,9 +18,9 @@ export default function Footer() {
               <Image
                 src="/recauva-logo.png"
                 alt="Reccova Logo"
-                width={150}
-                height={50}
-                className="h-10 w-auto object-contain"
+                width={180}
+                height={70}
+                className="h-25 w-auto object-contain"
                 priority
               />
             </div>
@@ -82,7 +82,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
 
-                { herf: "#pain-management", text:"Pain management"},
+                { href: "#Pain-management", text:"Pain management"},
                 { href: "#Women-fitness", text: "Women fitness"},
                 { href: "#home-care", text:"Home Care Services"},
                 { href: "#sports-injury", text: "Sports Injury rehabilitation" },

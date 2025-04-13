@@ -1,35 +1,32 @@
-interface EmailTemplateProps {
-  customerName: string
-  appointmentDate: string
-  appointmentTime: string
-  serviceType: string
-  customerPhone: string
-  customerEmail: string
-  customerAddress: string
-  message?: string
-  isConfirmation?: boolean
+interface Appointment {
+  name: string;
+  phone: string;
+  email: string;
+  serviceType: string;
+  date: string;
+  time: string;
+  address: string;
+  isFirstTime: boolean;
+  message?: string;
 }
 
-export const EmailTemplate: React.FC<EmailTemplateProps> = ({
-  customerName,
-  appointmentDate,
-  appointmentTime,
-  serviceType,
-  customerPhone,
-  customerEmail,
-  customerAddress,
-  message,
-  isConfirmation
-}) => (
-  <div>
-    <h1>{isConfirmation ? 'Appointment Confirmation' : 'New Appointment Request'}</h1>
-    <p>Service Type: {serviceType}</p>
-    <p>Date: {appointmentDate}</p>
-    <p>Time: {appointmentTime}</p>
-    <p>Patient Name: {customerName}</p>
-    <p>Phone: {customerPhone}</p>
-    <p>Email: {customerEmail}</p>
-    <p>Address: {customerAddress}</p>
-    {message && <p>Additional Information: {message}</p>}
-  </div>
-)
+export function EmailTemplate({ appointment }: { appointment: Appointment }) {
+  return (
+    <div>
+      <h2>New Appointment Booking</h2>
+      <p><strong>Patient Details:</strong></p>
+      <ul>
+        <li>Name: {appointment.name}</li>
+        <li>Phone: {appointment.phone}</li>
+        <li>Email: {appointment.email}</li>
+        <li>Service: {appointment.serviceType}</li>
+        <li>Date: {appointment.date}</li>
+        <li>Time: {appointment.time}</li>
+        <li>Address: {appointment.address}</li>
+        <li>First Time: {appointment.isFirstTime}</li>
+        {appointment.message && <li>Additional Info: {appointment.message}</li>}
+      </ul>
+      <p>Please contact the patient to confirm the appointment.</p>
+    </div>
+  );
+}

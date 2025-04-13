@@ -59,7 +59,7 @@ export default function LoadingAnimation() {
             priority 
           />
           <div className="text-xl lg:text-2xl text-black font-semibold">
-            Home Physiotherapy Services
+          COMPREHENSIVE PHYSIO CARE
           </div>
           <div className="text-lg text-gray-600 mt-2">
             Recovery is more than just healing
