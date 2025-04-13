@@ -387,6 +387,7 @@ export default function AboutPage() {
       </section>
       <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </div>
+    
   )
 }
 
