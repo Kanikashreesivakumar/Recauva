@@ -5,6 +5,8 @@ import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import TextReveal from "@/components/text-reveal"
+import { useState } from "react"
+import BookingModal from "@/components/booking-modal"
 
 const services = [
 
@@ -167,6 +169,7 @@ const services = [
 ]
 
 export default function ServicesPage() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   return (
     <div className="pt-24 pb-20 bg-white bg-gray/200   opacity-90">
       {}
@@ -301,17 +304,11 @@ export default function ServicesPage() {
 
             <TextReveal delay={0.2}>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button className="hover-glow bg-reccova-600 hover:bg-reccova-700 font-bold bg-black text-white" asChild>
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      document.dispatchEvent(new CustomEvent("open-booking-modal"))
-                    }}
-                  >
-                    Book an Assessment
+                <Button className="hover-glow bg-reccova-600 hover:bg-reccova-700 font-bold bg-black text-white" asChild onClick={() => setIsBookingModalOpen(true)}>
+                <div>
+                    Book An Assessment
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </div>
                 </Button>
 
                 <Button
@@ -326,6 +323,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </div>
   )
 }

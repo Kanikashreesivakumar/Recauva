@@ -6,6 +6,8 @@ import { ArrowRight, Award, Heart, Shield, Clock, MapPin, Users } from "lucide-r
 import { Button } from "@/components/ui/button"
 import TextReveal from "@/components/text-reveal"
 import AnimatedBlob from "@/components/animated-blob"
+import { useState } from "react"
+import BookingModal from "@/components/booking-modal"
 
 
 const teamMembers = [
@@ -106,6 +108,7 @@ const advantages = [
 ]
 
 export default function AboutPage() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   return (
     <div className="pt-24 pb-20 relative overflow-hidden">
       {}
@@ -361,18 +364,13 @@ export default function AboutPage() {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button
                   className="bg-white text-reccova-green hover:bg-gray-100 rounded-full px-8 py-6 text-lg shadow-lg"
-                  asChild
+                  asChild onClick={() => setIsBookingModalOpen(true)}
                 >
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      document.dispatchEvent(new CustomEvent("open-booking-modal"))
-                    }}
-                  >
+                  <div>
                     Book Now
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </div>
+               
                 </Button>
 
                 <Button
@@ -387,6 +385,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </div>
   )
 }

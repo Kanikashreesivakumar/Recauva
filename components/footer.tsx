@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <Image
-                src="/reccova logo.jpeg"
+                src="/recauva-logo.png"
                 alt="Reccova Logo"
                 width={150}
                 height={50}
@@ -63,7 +63,7 @@ export default function Footer() {
                 { href: "/testimonials", text: "Testimonials", color: "green" },
                 { href: "/contact", text: "Contact", color: "violet" },
               ].map((link) => (
-                <li key={link.href}>
+                <li key={link.text}>
                   <Link
                     href={link.href}
                     className="text-black hover:text-gray-900 transition-colors flex items-center"

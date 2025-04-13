@@ -8,9 +8,12 @@ import ParallaxSection from "@/components/parallax-section"
 import TextReveal from "@/components/text-reveal"
 import TestimonialSlider from "@/components/testimonial-slider"
 import AnimatedBlob from "@/components/animated-blob"
+import { useState } from "react"
+import BookingModal from "@/components/booking-modal"
 
 
 export default function Home() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   return (
     <>
       {}
@@ -41,7 +44,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   className="bg-gradient-to-r from-reccova-green to-reccova-mint hover:from-reccova-mint hover:to-reccova-green text-black px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
-                  asChild
+                  asChild 
                 >
                   <Link href="#booking-section">Book a Session</Link>
                 </Button>
@@ -347,18 +350,12 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button
                   className="bg-black text-reccova-green hover:bg-black rounded-full px-8 py-6 text-lg shadow-lg"
-                  asChild
+                  asChild onClick={() => setIsBookingModalOpen(true)}
                 >
-                  <Link
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      document.dispatchEvent(new CustomEvent("open-booking-modal"))
-                    }}
-                  >
+                  <div>
                     Book Now
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </div>
                 </Button>
 
                 <Button
@@ -503,6 +500,7 @@ export default function Home() {
           </TextReveal>
         </div>
       </section>
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </>
   )
 }

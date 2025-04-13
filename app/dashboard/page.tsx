@@ -20,6 +20,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useToast } from "@/components/ui/use-toast"
 import { getAppointments, cancelAppointment, rescheduleAppointment } from "@/app/actions"
 import TextReveal from "@/components/text-reveal"
+import BookingModal from "@/components/booking-modal"
 
 interface Appointment {
   id: string
@@ -45,6 +46,7 @@ export default function DashboardPage() {
   const [newTime, setNewTime] = useState("")
   const [isRescheduling, setIsRescheduling] = useState(false)
   const [isCancelling, setIsCancelling] = useState(false)
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
 
   useEffect(() => {
     const fetchAppointments = async () => {
@@ -375,9 +377,7 @@ export default function DashboardPage() {
                       <p className="text-gray-600 mb-6">You don't have any upcoming appointments scheduled.</p>
                       <Button
                         className="hover-glow bg-reccova-600 hover:bg-reccova-700"
-                        onClick={() => {
-                          document.dispatchEvent(new CustomEvent("open-booking-modal"))
-                        }}
+                        onClick={() => setIsBookingModalOpen(true)}
                       >
                         Book an Appointment
                       </Button>
@@ -525,6 +525,7 @@ export default function DashboardPage() {
           </Tabs>
         </div>
       </section>
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setIsBookingModalOpen(false)} />
     </div>
   )
 }

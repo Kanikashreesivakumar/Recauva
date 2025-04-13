@@ -51,7 +51,7 @@ export default function LoadingAnimation() {
           className="mb-8 text-center"
         >
           <Image 
-            src="/reccova logo.jpeg" 
+            src="/recauva-logo.png" 
             alt="Reccova Logo" 
             width={200} 
             height={70} 

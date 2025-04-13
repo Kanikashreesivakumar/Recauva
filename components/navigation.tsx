@@ -96,7 +96,7 @@ export default function Navigation() {
                 <motion.div
                   key="close"
                   initial={{ opacity: 0, rotate: -90 }}
-                  animate={{ opacity: 1, rotate: 0 }}
+                  animate={{ opacity: 1, rotate: 0                                    }}
                   exit={{ opacity: 0, rotate: 90 }}
                   transition={{ duration: 0.2 }}
                 >
