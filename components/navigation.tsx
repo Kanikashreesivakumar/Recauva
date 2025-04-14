@@ -75,7 +75,7 @@ export default function Navigation() {
                 key={link.name}
                 href={link.href}
                 className={`nav-link relative font-medium transition-colors hover:text-gray-900 ${
-                  pathname === link.href ? "text-gray-900 active" : "text-gray-600"
+                  pathname === link.href ? "text-black active" : "text-black"
                 }`}
               >
                 {link.name}

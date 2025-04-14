@@ -20,7 +20,7 @@ const blogPosts = [
     image: "/blog1.jpeg?height=400&width=600",
     date: "May 15, 2023",
     category: "Recovery Tips",
-    author: "Dr. Sarah Johnson",
+    author: "Dr. Suresh",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
   {
@@ -31,7 +31,7 @@ const blogPosts = [
     image: "/blog2.jpeg?height=400&width=600",
     date: "April 28, 2023",
     category: "Expert Advice",
-    author: "Dr. Michael Chen",
+    author: "Dr. Mugilvanan",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
   {
@@ -42,7 +42,7 @@ const blogPosts = [
     image: "/blog3.jpeg?height=400&width=600",
     date: "March 12, 2023",
     category: "Wellness",
-    author: "Emily Rodriguez",
+    author: "Madhumitha",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
   {
@@ -53,7 +53,7 @@ const blogPosts = [
     image: "/injury.jpeg?height=400&width=600",
     date: "February 25, 2023",
     category: "Sports Therapy",
-    author: "Dr. James Wilson",
+    author: "Dr. Kunal ",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
   {
@@ -64,7 +64,7 @@ const blogPosts = [
     image: "/walk.jpeg?height=400&width=600",
     date: "January 18, 2023",
     category: "Geriatric Care",
-    author: "Dr. Lisa Thompson",
+    author: "Dr. Ramesh Kumar",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
   {
@@ -75,7 +75,7 @@ const blogPosts = [
     image: "/work.jpeg?height=400&width=600",
     date: "December 5, 2022",
     category: "Ergonomics",
-    author: "Robert Williams",
+    author: "Rohit",
     authorImage: "/placeholder.svg?height=80&width=80",
   },
 ]
