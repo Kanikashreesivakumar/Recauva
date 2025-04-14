@@ -61,7 +61,16 @@ export default function ContactPage() {
       setIsSubmitting(true)
 
       try {
-        await new Promise((resolve) => setTimeout(resolve, 1500))
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) throw new Error('Booking failed');
+
 
         toast({
           title: "Message Sent!",
