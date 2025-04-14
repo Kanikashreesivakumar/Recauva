@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useToast } from "@/components/ui/use-toast"
-import { bookAppointment } from "@/app/actions"
+
 
 interface BookingModalProps {
   isOpen: boolean
@@ -293,7 +293,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                           }`}
                         >
                         
-                          <option value=""> Select a service--> </option>
+                          <option value=""> Select a service--{'>'}  </option>
                           {serviceOptions.map((service) => (
                             <option key={service} value={service}>
                               {service}
