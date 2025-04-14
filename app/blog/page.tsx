@@ -112,7 +112,7 @@ export default function BlogPage() {
 
       {}
       <section className="bg-gradient-to-r from-reccova-green to-reccova-mint text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/blogback.jpeg?height=200&width=200')] bg-center bg-cover bg-no-repeat opacity-60"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/blogback.jpeg?height=200&width=200')] bg-center bg-cover bg-no-repeat opacity-90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
             <h1 className="text-5xl md:text-7xl font-bold mb-9 text-center"> <span className="gradient-text">Recauva Blog</span></h1>

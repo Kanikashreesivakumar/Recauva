@@ -117,7 +117,7 @@ export default function AboutPage() {
 
       {}
       <section className=" text-white py-16 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/back.jpeg?height=400&width=300')] bg-repeat opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/back.jpeg?height=400&width=300')] bg-repeat opacity-90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <TextReveal>
             <h1 className="text-6xl md:text-7xl font-bold mb-7 text-center"><span className="gradient-text">About Recauva </span></h1>

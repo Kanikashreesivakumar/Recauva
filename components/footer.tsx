@@ -134,7 +134,7 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-black mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Reccova. All rights reserved.
+              &copy; {new Date().getFullYear()} Recauva. All rights reserved.
             </p>
             <div className="flex space-x-6">
               {[
@@ -153,7 +153,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center mt-6 text-black text-sm flex items-center justify-center">
-            Made with <Heart size={16} className="mx-1 text-reccova-pink" /> for better health and wellness
+            Made with <Heart size={16} className="mx-1 text-reccova-green" /> for better health and wellness
           </div>
         </div>
       </div>

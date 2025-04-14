@@ -1,7 +1,7 @@
 "use server"
 
 import { revalidatePath } from "next/cache"
-import { EmailTemplate } from '@/components/email-template'
+import { EmailTemplate } from '@/components/email-templates'
 import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)

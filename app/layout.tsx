@@ -8,7 +8,6 @@ import Footer from "@/components/footer"
 import LoadingAnimation from "@/components/loading-animation"
 import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from "@/components/theme-provider"
-import LiveChat from "@/components/live-chat"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -32,7 +31,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <main className="min-h-screen ">{children}</main>
           <Footer />
           <Toaster />
-          <LiveChat />
         </ThemeProvider>
       </body>
     </html>

@@ -98,44 +98,40 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-
-    if (validateStep1() && validateStep2()) {
-      setIsSubmitting(true)
-
+    e.preventDefault();
+    
+    if (validateForm()) {
+      setIsSubmitting(true);
+      
       try {
-        await bookAppointment(formData)
+        const response = await fetch('/api/bookings', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) throw new Error('Booking failed');
 
         toast({
-          title: "Appointment Request Sent!",
-          description: "We'll contact you shortly to confirm your appointment.",
+          title: "Booking Successful!",
+          description: "Check your email for confirmation details.",
           duration: 5000,
-        })
+        });
 
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          address: "",
-          serviceType: "",
-          date: "",
-          time: "",
-          message: "",
-          isFirstTime: "yes",
-        })
-        setStep(1)
-        onClose()
+        onClose();
       } catch (error) {
         toast({
           title: "Booking Failed",
-          description: "There was an error booking your appointment. Please try again.",
+          description: "Please try again or contact us directly.",
           variant: "destructive",
-        })
+        });
       } finally {
-        setIsSubmitting(false)
+        setIsSubmitting(false);
       }
     }
-  }
+  };
 
   const serviceOptions = [
     "Rehabilitation",
@@ -394,7 +390,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-4">
                       <h3 className="font-medium text-lg text-black mb-4">Appointment Summary</h3>
 
-                      <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-violet/5 p-6 rounded-xl space-y-4">
+                      <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-green/5 p-6 rounded-xl space-y-4">
                         <div className="flex">
                           <User className="text-reccova-green mr-3 flex-shrink-0" size={18} />
                           <div>
@@ -404,7 +400,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         </div>
 
                         <div className="flex">
-                          <Calendar className="text-reccova-violet mr-3 flex-shrink-0" size={18} />
+                          <Calendar className="text-reccova-green mr-3 flex-shrink-0" size={18} />
                           <div>
                             <p className="text-sm text-black">Date & Time</p>
                             <p className="font-medium">
@@ -414,7 +410,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         </div>
 
                         <div className="flex">
-                          <MapPin className="text-reccova-pink mr-3 flex-shrink-0" size={18} />
+                          <MapPin className="text-reccova-green mr-3 flex-shrink-0" size={18} />
                           <div>
                             <p className="text-sm text-black">Location</p>
                             <p className="font-medium">{formData.address}</p>
@@ -489,5 +485,9 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
       )}
     </AnimatePresence>
   )
+}
+
+function validateForm(): boolean {
+  return true; 
 }
 
