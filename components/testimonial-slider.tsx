@@ -17,7 +17,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Mugilvanan S",
     role: "Recovery Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Madhumitha",
     role: "Sports Injury Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
@@ -33,7 +33,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Ramesh",
     role: "Chronic Pain Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:
@@ -41,7 +41,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    name: "Robert Williams",
+    name: "Suresh",
     role: "Elderly Care Patient",
     image: "/placeholder.svg?height=80&width=80",
     quote:

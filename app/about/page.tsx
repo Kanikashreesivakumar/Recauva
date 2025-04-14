@@ -312,7 +312,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <TextReveal>
               <div className="bg-gradient-to-r from-reccova-green/5 to-reccova-mint/5 p-8 rounded-2xl text-center">
-                <div className="text-6xl font-bold gradient-text mb-2">15+</div>
+                <div className="text-6xl font-bold gradient-text mb-2">2+</div>
                 <div className="text-black">Years of Experience</div>
               </div>
             </TextReveal>
@@ -326,7 +326,7 @@ export default function AboutPage() {
 
             <TextReveal delay={0.2}>
               <div className="bg-gradient-to-r from-reccova-pink/5 to-reccova-violet/5 p-8 rounded-2xl text-center">
-                <div className="text-6xl font-bold gradient-text mb-2">5000+</div>
+                <div className="text-6xl font-bold gradient-text mb-2">500+</div>
                 <div className="text-black">Patients Served</div>
               </div>
             </TextReveal>

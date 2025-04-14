@@ -97,10 +97,10 @@ const blogPosts = {
     image: "/blog1.jpeg?height=600&width=1200",
     date: "May 15, 2023",
     category: "Recovery Tips",
-    author: "Dr. Sarah Johnson",
+    author: "Dr. Suresh",
     authorImage: "/placeholder.svg?height=80&width=80",
     authorBio:
-      "Dr. Sarah Johnson is a senior physiotherapist at Recauva with over 15 years of experience specializing in post-surgical rehabilitation and sports injuries.",
+      "Dr. Suresh is a senior physiotherapist at Recauva with over 15 years of experience specializing in post-surgical rehabilitation and sports injuries.",
   },
   "chronic-pain-management": {
     title: "Understanding Chronic Pain: Causes and Management",
@@ -201,10 +201,10 @@ const blogPosts = {
     image: "/blog2.jpeg?height=600&width=1200",
     date: "April 28, 2023",
     category: "Expert Advice",
-    author: "Dr. Michael Chen",
+    author: "Dr. Mugilvanan",
     authorImage: "/placeholder.svg?height=80&width=80",
     authorBio:
-      "Dr. Michael Chen is a pain management specialist at Recauva with expertise in treating chronic pain conditions using an integrative approach combining physical therapy, education, and lifestyle modifications.",
+      "Dr. Mugilvanan is a pain management specialist at Recauva with expertise in treating chronic pain conditions using an integrative approach combining physical therapy, education, and lifestyle modifications.",
   },
   "benefits-of-stretching": {
     title: "The Benefits of Regular Stretching for All Ages",
@@ -323,11 +323,209 @@ const blogPosts = {
     image: "/blog3.jpeg?height=600&width=1200",
     date: "March 12, 2023",
     category: "Wellness",
-    author: "Emily Rodriguez",
+    author: "Madhumitha",
     authorImage: "/placeholder.svg?height=80&width=80",
     authorBio:
-      "Emily Rodriguez is a certified physiotherapist and yoga instructor at Reccova, specializing in therapeutic stretching and mobility programs for clients of all ages and abilities.",
+      "Madhumitha is a certified physiotherapist and yoga instructor at Reccova, specializing in therapeutic stretching and mobility programs for clients of all ages and abilities.",
   },
+  "sports-injury-prevention":{
+  title: "Preventing Common Sports Injuries: A Guide for Athletes",
+  excerpt:
+    "Stay ahead of injuries with proactive strategies to keep your body strong, agile, and ready for peak performance in any sport.",
+  content: `
+    <p>Sports injuries can sideline even the most dedicated athletes. However, many injuries are preventable with the right approach to training, preparation, and recovery. In this article, we’ll explore evidence-based strategies to help athletes minimize their risk and stay game-ready.</p>
+    
+    <h2>Understanding Sports Injuries</h2>
+    <p>Sports injuries typically fall into two categories: acute injuries (caused by sudden trauma) and overuse injuries (developing over time due to repetitive stress). Common types include:</p>
+    <ul>
+      <li>Sprains (ligament injuries)</li>
+      <li>Strains (muscle or tendon injuries)</li>
+      <li>Shin splints</li>
+      <li>Tendonitis</li>
+      <li>Stress fractures</li>
+      <li>Dislocations and concussions</li>
+    </ul>
+    
+    <h2>Top Strategies for Injury Prevention</h2>
+    
+    <h3>1. Proper Warm-Up and Cool-Down</h3>
+    <p>A dynamic warm-up primes the body for movement, improving circulation and muscle readiness. After activity, a cool-down helps reduce soreness and supports recovery.</p>
+    
+    <h3>2. Strength and Conditioning</h3>
+    <p>Building overall strength — especially in stabilizing muscles — enhances joint support and movement control, reducing the likelihood of injury.</p>
+    
+    <h3>3. Flexibility and Mobility Training</h3>
+    <p>Stretching and mobility exercises help maintain joint range of motion, improve posture, and correct muscular imbalances — all key for injury prevention.</p>
+    
+    <h3>4. Sport-Specific Technique</h3>
+    <p>Poor technique increases strain on muscles and joints. Working with a coach or therapist to refine form can dramatically lower injury risk.</p>
+    
+    <h3>5. Adequate Rest and Recovery</h3>
+    <p>Overtraining without sufficient rest increases the risk of overuse injuries. Athletes should build recovery days into their schedule and listen to signs of fatigue.</p>
+    
+    <h3>6. Hydration and Nutrition</h3>
+    <p>Dehydrated or undernourished muscles are more prone to cramping and strain. A balanced diet with proper hydration fuels both performance and recovery.</p>
+    
+    <h3>7. Wearing the Right Gear</h3>
+    <p>Supportive footwear, protective gear, and appropriate clothing play a crucial role in preventing accidents and reducing impact-related injuries.</p>
+    
+    <h2>Common Injuries by Sport</h2>
+    <p>Injuries can vary depending on the sport. Here are some examples:</p>
+    <ul>
+      <li><strong>Running:</strong> Shin splints, IT band syndrome, stress fractures</li>
+      <li><strong>Basketball:</strong> Ankle sprains, ACL tears, jumper’s knee</li>
+      <li><strong>Swimming:</strong> Rotator cuff injuries, swimmer’s shoulder</li>
+      <li><strong>Soccer:</strong> Groin pulls, hamstring strains, concussions</li>
+      <li><strong>Weightlifting:</strong> Lower back strain, wrist and elbow injuries</li>
+    </ul>
+    
+    <h2>When to See a Sports Therapist</h2>
+    <p>Early intervention can prevent minor issues from becoming chronic problems. Consult a professional if you experience:</p>
+    <ul>
+      <li>Persistent pain or swelling</li>
+      <li>Reduced range of motion</li>
+      <li>Instability or weakness in a joint</li>
+      <li>Recurring injuries in the same area</li>
+    </ul>
+    
+    <h2>Preventing Injuries Is a Long-Term Game</h2>
+    <p>Consistent prevention strategies pay off in long-term athletic health and performance. Injuries not only set back progress but can also lead to psychological stress. Staying proactive with your body care is the smartest way to stay in the game.</p>
+    
+    <p>At Reccova, our sports therapy team specializes in helping athletes prevent and recover from injuries through personalized assessments, rehabilitation programs, and performance training. Whether you're a weekend warrior or an elite competitor, we’re here to support your active journey.</p>
+  `,
+  image: "/injury.jpeg?height=600&width=1200",
+  date: "February 25, 2023",
+  category: "Sports Therapy",
+  author: "Dr. Kunal",
+  authorImage: "/placeholder.svg?height=80&width=80",
+  authorBio:
+    "Dr. Kunal is a board-certified sports therapist and injury prevention specialist at Reccova, helping athletes optimize performance and stay injury-free across a wide range of sports.",
+},
+
+"elderly-fall-prevention":{
+  title: "Fall Prevention Strategies for Older Adults",
+  excerpt:
+    "Discover practical tips and exercises to improve balance and reduce the risk of falls for seniors living independently.",
+  content: `
+Falls are a leading cause of injury among older adults, often leading to serious consequences such as fractures or hospitalizations. However, many falls can be prevented with simple changes to lifestyle, home environment, and physical activity. This guide explores proven fall prevention strategies to help seniors maintain their independence and safety.
+
+<h2>Understanding Fall Risks in Seniors</h2>
+<p>As we age, physical and sensory changes can increase the likelihood of falls. Key contributors include:</p>
+<ul>
+  <li>Decreased muscle strength and flexibility</li>
+  <li>Balance or gait issues</li>
+  <li>Vision and hearing impairments</li>
+  <li>Chronic health conditions like arthritis or diabetes</li>
+  <li>Medications that cause dizziness or drowsiness</li>
+  <li>Hazards in the home environment</li>
+</ul>
+
+<h2>Effective Fall Prevention Strategies</h2>
+
+<h3>1. Balance and Strength Training</h3>
+<p>Engage in exercises like Tai Chi, yoga, or strength training to improve stability and mobility. Even daily walking can significantly enhance coordination and confidence.</p>
+
+<h3>2. Home Safety Modifications</h3>
+<p>Reduce tripping hazards by removing clutter, securing loose rugs, adding grab bars in the bathroom, and ensuring adequate lighting throughout the home.</p>
+
+<h3>3. Vision and Hearing Checks</h3>
+<p>Regular eye and hearing exams help detect changes that may affect spatial awareness or response to surroundings — both critical to preventing falls.</p>
+
+<h3>4. Medication Management</h3>
+<p>Review medications with a healthcare provider to identify those that may affect balance, alertness, or blood pressure, and explore safer alternatives if needed.</p>
+
+<h3>5. Supportive Footwear</h3>
+<p>Choose well-fitting, non-slip shoes with good arch support. Avoid walking barefoot or in socks on smooth surfaces.</p>
+
+<h3>6. Assistive Devices and Mobility Aids</h3>
+<p>Canes, walkers, and handrails offer valuable support for those with mobility challenges. Ensure these are fitted and used correctly under professional guidance.</p>
+
+<h2>When to Consult a Geriatric Specialist</h2>
+<p>Consider a consultation if you or a loved one:</p>
+<ul>
+  <li>Has experienced one or more recent falls</li>
+  <li>Feels unsteady or anxious while walking</li>
+  <li>Struggles with daily tasks that require balance</li>
+  <li>Wants a personalized fall risk assessment or prevention plan</li>
+</ul>
+
+<h2>Empowering Seniors to Stay Independent</h2>
+<p>Fall prevention isn’t just about avoiding injuries — it’s about empowering older adults to live actively and independently with confidence. Through thoughtful planning, supportive environments, and guided physical activity, seniors can continue doing the things they love while staying safe.</p>
+
+<p>At Reccova, our geriatric care team specializes in personalized fall risk assessments, balance training, and mobility support for older adults. We're dedicated to helping seniors live securely and vibrantly, every step of the way.</p>
+`,
+  image: "/walk.jpeg?height=600&width=1200",
+  date: "January 18, 2023",
+  category: "Geriatric Care",
+  author: "Dr. Ramesh Kumar",
+  authorImage: "/placeholder.svg?height=80&width=80",
+  authorBio:
+    "Dr. Ramesh Kumar is a licensed geriatric care specialist at Reccova, focusing on balance improvement, fall prevention, and independence for older adults living at home.",
+},
+
+"desk-ergonomics":{
+ 
+  title: "Ergonomics at Home: Setting Up Your Workspace",
+  excerpt:
+    "Working from home? Learn how to set up an ergonomic workspace to prevent pain and discomfort during long hours at your desk.",
+  content: `
+With more people working remotely than ever before, it's essential to create a workspace that supports comfort and health. Poor ergonomics can lead to back pain, neck strain, eye fatigue, and repetitive stress injuries. This guide offers practical advice on designing a home office that promotes productivity and well-being.
+
+<h2>Why Ergonomics Matter</h2>
+<p>Ergonomics is the science of designing workspaces that fit the user's body and movement. A poorly arranged workstation can lead to:</p>
+<ul>
+  <li>Neck and shoulder tension</li>
+  <li>Lower back pain</li>
+  <li>Wrist and hand discomfort (e.g., carpal tunnel syndrome)</li>
+  <li>Eye strain and headaches</li>
+  <li>Decreased productivity and focus</li>
+</ul>
+
+<h2>Key Components of an Ergonomic Workspace</h2>
+
+<h3>1. Chair and Posture</h3>
+<p>Use a chair with adjustable height, lumbar support, and armrests. Sit upright with feet flat on the floor, knees at a 90° angle, and your back supported.</p>
+
+<h3>2. Desk and Monitor Height</h3>
+<p>Your monitor should be at eye level, about an arm’s length away. The top of the screen should align with or be slightly below your eye line to avoid neck strain.</p>
+
+<h3>3. Keyboard and Mouse Placement</h3>
+<p>Keep your keyboard and mouse at the same level, close to the body, with wrists in a neutral position. Consider using a wrist rest if needed.</p>
+
+<h3>4. Lighting and Screen Position</h3>
+<p>Position your screen to reduce glare. Use natural light where possible and supplement with task lighting to avoid eye strain.</p>
+
+<h3>5. Movement and Breaks</h3>
+<p>Take short breaks every 30–60 minutes to stand, stretch, and reset your posture. Use reminders or apps to encourage movement throughout the day.</p>
+
+<h2>Bonus Tips for Remote Workers</h2>
+<ul>
+  <li>Use a laptop stand or external monitor to elevate your screen</li>
+  <li>Invest in a sit-stand desk if possible for posture variation</li>
+  <li>Keep frequently used items within arm’s reach to avoid strain</li>
+  <li>Maintain a clean, distraction-free workspace</li>
+</ul>
+
+<h2>When to Seek Ergonomic Consultation</h2>
+<p>If you’re experiencing persistent pain or discomfort while working from home, consider a professional ergonomic assessment. This can help tailor your setup to your specific needs and prevent chronic issues.</p>
+
+<h2>Work Comfortably, Work Better</h2>
+<p>Creating an ergonomic home office is an investment in your health and productivity. Small changes to your setup can make a big difference in how you feel and perform during the workday.</p>
+
+<p>At Reccova, we offer virtual and in-person ergonomic assessments to help remote workers optimize their work environment. Our goal is to ensure you stay comfortable, focused, and injury-free while working from home.</p>
+`,
+  image: "/work.jpeg?height=600&width=1200",
+  date: "December 5, 2022",
+  category: "Ergonomics",
+  author: "Rohit",
+  authorImage: "/placeholder.svg?height=80&width=80",
+  authorBio:
+    "Rohit is a certified ergonomics consultant at Reccova, helping individuals and organizations create healthier, more efficient workspaces.",
+},
+
+
+
+
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {

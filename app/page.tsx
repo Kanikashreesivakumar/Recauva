@@ -20,7 +20,7 @@ export default function Home() {
       <ParallaxSection
         bgImage="/reccova.jpeg"
         
-        className="animated-bg"
+        className="animated-bg , opacity-90"
       >
         <div className="container mx-auto px-4 h-full flex flex-col justify-center">
           <div className="max-w-3xl relative">
