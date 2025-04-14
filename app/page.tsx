@@ -245,7 +245,7 @@ export default function Home() {
                   </p>
                   <Button
                     variant="outline"
-                    className="border-reccova-violet text-reccova-violet hover:bg-reccova-violet/5 rounded-full"
+                    className="border-reccova-green text-reccova-green hover:bg-reccova-green/5 rounded-full"
                     asChild
                   >
                     <Link href="/services#sports-injury">
@@ -275,7 +275,7 @@ export default function Home() {
                   </p>
                   <Button
                     variant="outline"
-                    className="border-reccova-pink text-reccova-pink hover:bg-reccova-pink/5 rounded-full"
+                    className="border-reccova-green text-reccova-green hover:bg-reccova-green/5 rounded-full"
                     asChild
                   >
                     <Link href="/services#geriatric-care">
