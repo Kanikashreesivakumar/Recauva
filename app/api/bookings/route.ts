@@ -9,20 +9,19 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-
     const formattedPhone = process.env.ADMIN_PHONE?.startsWith('+') 
       ? process.env.ADMIN_PHONE 
       : `+${process.env.ADMIN_PHONE?.replace(/\D/g, '')}`;
 
     await resend.emails.send({
-      from: 'Reccova Bookings <appointments@reccova.com>',
+      from: 'Reccova Bookings <onboarding@resend.dev>',
       to: process.env.ADMIN_EMAIL!,
       subject: `New Booking: ${body.name} - ${body.serviceType}`,
       react: BookingEmailTemplate({ ...body, isConfirmation: false }),
     });
 
     await resend.emails.send({
-      from: 'Reccova <appointments@reccova.com>',
+      from: 'Reccova <onboarding@resend.dev>',
       to: body.email,
       subject: 'Your Physiotherapy Session Confirmation',
       react: BookingEmailTemplate({ ...body, isConfirmation: true }),
