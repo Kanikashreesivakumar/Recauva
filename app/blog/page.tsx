@@ -230,35 +230,10 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {}
-      <section className="py-16 bg-[#F2EFE7]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <TextReveal>
-              <h2 className="text-4xl font-bold mb-4 text-black">Subscribe to Our Newsletter</h2>
-            </TextReveal>
-
-            <TextReveal delay={0.1}>
-              <p className="text-black font-semibold lg:text-2xl mb-8">
-                Stay updated with the latest articles, tips, and advice from our expert physiotherapists.
-              </p>
-            </TextReveal>
-
-            <TextReveal delay={0.2}>
-              <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <Input type="email" placeholder="Your email address" className="flex-1 rounded-full" required />
-                <Button
-                  type="submit"
-                  className="bg-gradient-to-r from-reccova-green to-reccova-mint hover:from-reccova-mint hover:to-reccova-green text-white rounded-full"
-                >
-                  Subscribe
-                </Button>
-              </form>
-            </TextReveal>
+      
           </div>
-        </div>
-      </section>
-    </div>
+        
+    
   )
 }
 
