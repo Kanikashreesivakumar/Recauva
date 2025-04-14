@@ -98,10 +98,7 @@ const blogPosts = {
     date: "May 15, 2023",
     category: "Recovery Tips",
     author: "Dr. Suresh",
-    authorImage: "/placeholder.svg?height=80&width=80",
-    authorBio:
-      "Dr. Suresh is a senior physiotherapist at Recauva with over 15 years of experience specializing in post-surgical rehabilitation and sports injuries.",
-  },
+      },
   "chronic-pain-management": {
     title: "Understanding Chronic Pain: Causes and Management",
     excerpt:
@@ -201,11 +198,7 @@ const blogPosts = {
     image: "/blog2.jpeg?height=600&width=1200",
     date: "April 28, 2023",
     category: "Expert Advice",
-    author: "Dr. Mugilvanan",
-    authorImage: "/placeholder.svg?height=80&width=80",
-    authorBio:
-      "Dr. Mugilvanan is a pain management specialist at Recauva with expertise in treating chronic pain conditions using an integrative approach combining physical therapy, education, and lifestyle modifications.",
-  },
+      },
   "benefits-of-stretching": {
     title: "The Benefits of Regular Stretching for All Ages",
     excerpt:
@@ -323,11 +316,7 @@ const blogPosts = {
     image: "/blog3.jpeg?height=600&width=1200",
     date: "March 12, 2023",
     category: "Wellness",
-    author: "Madhumitha",
-    authorImage: "/placeholder.svg?height=80&width=80",
-    authorBio:
-      "Madhumitha is a certified physiotherapist and yoga instructor at Reccova, specializing in therapeutic stretching and mobility programs for clients of all ages and abilities.",
-  },
+     },
   "sports-injury-prevention":{
   title: "Preventing Common Sports Injuries: A Guide for Athletes",
   excerpt:
@@ -396,11 +385,7 @@ const blogPosts = {
   image: "/injury.jpeg?height=600&width=1200",
   date: "February 25, 2023",
   category: "Sports Therapy",
-  author: "Dr. Kunal",
-  authorImage: "/placeholder.svg?height=80&width=80",
-  authorBio:
-    "Dr. Kunal is a board-certified sports therapist and injury prevention specialist at Reccova, helping athletes optimize performance and stay injury-free across a wide range of sports.",
-},
+  },
 
 "elderly-fall-prevention":{
   title: "Fall Prevention Strategies for Older Adults",
@@ -457,11 +442,7 @@ Falls are a leading cause of injury among older adults, often leading to serious
   image: "/walk.jpeg?height=600&width=1200",
   date: "January 18, 2023",
   category: "Geriatric Care",
-  author: "Dr. Ramesh Kumar",
-  authorImage: "/placeholder.svg?height=80&width=80",
-  authorBio:
-    "Dr. Ramesh Kumar is a licensed geriatric care specialist at Reccova, focusing on balance improvement, fall prevention, and independence for older adults living at home.",
-},
+  },
 
 "desk-ergonomics":{
  
@@ -517,11 +498,7 @@ With more people working remotely than ever before, it's essential to create a w
   image: "/work.jpeg?height=600&width=1200",
   date: "December 5, 2022",
   category: "Ergonomics",
-  author: "Rohit",
-  authorImage: "/placeholder.svg?height=80&width=80",
-  authorBio:
-    "Rohit is a certified ergonomics consultant at Reccova, helping individuals and organizations create healthier, more efficient workspaces.",
-},
+ },
 
 
 
@@ -585,7 +562,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </span>
                 <span className="inline-flex items-center font-semibold text-black">
                   <User className="mr-1 h-4 w-4" />
-                  {post.author}
+                
                 </span>
                 <span className="inline-flex items-center text-black px-3 py-1 rounded-full bg-gradient-to-r from-reccova-green/50 to-reccova-mint/50 text-reccova-green">
                   <Tag className="mr-1 h-4 w-4" />
@@ -609,22 +586,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </TextReveal>
 
-          {}
-          <TextReveal>
-            <div className="bg-[#F2EFE7]  text-white from-reccova-green/5 to-reccova-mint/5 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 mb-8">
-              <Image
-                src={post.authorImage || "/placeholder.svg"}
-                alt={post.author}
-                width={100}
-                height={100}
-                className="rounded-full border-4 border-white shadow-md "
-              />
-              <div>
-                <h3 className="text-xl font-semibold text-black mb-2">{post.author}</h3>
-                <p className="text-black">{post.authorBio}</p>
-              </div>
-            </div>
-          </TextReveal>
+          
 
           {}
           <TextReveal>

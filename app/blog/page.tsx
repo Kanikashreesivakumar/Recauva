@@ -20,8 +20,7 @@ const blogPosts = [
     image: "/blog1.jpeg?height=400&width=600",
     date: "May 15, 2023",
     category: "Recovery Tips",
-    author: "Dr. Suresh",
-    authorImage: "/placeholder.svg?height=80&width=80",
+    authorImage: "/author1.jpeg",
   },
   {
     id: "chronic-pain-management",
@@ -31,8 +30,7 @@ const blogPosts = [
     image: "/blog2.jpeg?height=400&width=600",
     date: "April 28, 2023",
     category: "Expert Advice",
-    author: "Dr. Mugilvanan",
-    authorImage: "/placeholder.svg?height=80&width=80",
+    
   },
   {
     id: "benefits-of-stretching",
@@ -42,8 +40,7 @@ const blogPosts = [
     image: "/blog3.jpeg?height=400&width=600",
     date: "March 12, 2023",
     category: "Wellness",
-    author: "Madhumitha",
-    authorImage: "/placeholder.svg?height=80&width=80",
+  
   },
   {
     id: "sports-injury-prevention",
@@ -53,8 +50,7 @@ const blogPosts = [
     image: "/injury.jpeg?height=400&width=600",
     date: "February 25, 2023",
     category: "Sports Therapy",
-    author: "Dr. Kunal ",
-    authorImage: "/placeholder.svg?height=80&width=80",
+   
   },
   {
     id: "elderly-fall-prevention",
@@ -64,8 +60,7 @@ const blogPosts = [
     image: "/walk.jpeg?height=400&width=600",
     date: "January 18, 2023",
     category: "Geriatric Care",
-    author: "Dr. Ramesh Kumar",
-    authorImage: "/placeholder.svg?height=80&width=80",
+    
   },
   {
     id: "desk-ergonomics",
@@ -75,8 +70,7 @@ const blogPosts = [
     image: "/work.jpeg?height=400&width=600",
     date: "December 5, 2022",
     category: "Ergonomics",
-    author: "Rohit",
-    authorImage: "/placeholder.svg?height=80&width=80",
+   
   },
 ]
 
@@ -196,14 +190,8 @@ export default function BlogPage() {
 
                     <div className="flex justify-between items-center">
                       <div className="flex items-center">
-                        <Image
-                          src={post.authorImage || "/placeholder.svg"}
-                          alt={post.author}
-                          width={32}
-                          height={32}
-                          className="rounded-full mr-2 border-2 border-reccova-green/20"
-                        />
-                        <span className="text-sm text-black">{post.author}</span>
+                       
+                        
                       </div>
 
                       <Button
