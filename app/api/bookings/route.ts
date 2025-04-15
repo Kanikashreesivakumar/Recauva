@@ -15,14 +15,14 @@ export async function POST(request: Request) {
       : `+${process.env.ADMIN_PHONE?.replace(/\D/g, '')}`;
 
     await resend.emails.send({
-      from: 'Recauva Bookings <onboarding@resend.dev>',
+      from: `Recauva Bookings <${process.env.EMAIL_FROM}>`,
       to: process.env.ADMIN_EMAIL!,
       subject: `New Booking: ${body.name} - ${body.serviceType}`,
       react: BookingEmailTemplate({ ...body, isConfirmation: false }),
     });
 
     await resend.emails.send({
-      from: 'Recauva <onboarding@resend.dev>',
+      from: `Recauva <${process.env.EMAIL_FROM}>`,
       to: body.email,
       subject: 'Your Physiotherapy Session Confirmation',
       react: BookingEmailTemplate({ ...body, isConfirmation: true }),

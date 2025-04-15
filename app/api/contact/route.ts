@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     
     await resend.emails.send({
-      from: 'Reccova Contact <onboarding@resend.dev>',
+      from: `Recauva Contact <${process.env.EMAIL_FROM}>`,
       to: process.env.ADMIN_EMAIL!,
       subject: `${body.subject}`,
       html: `<p>Message from: ${body.name || 'Unknown'}</p>
