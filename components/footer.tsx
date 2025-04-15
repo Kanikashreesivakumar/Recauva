@@ -123,7 +123,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail size={18} className="mr-3 flex-shrink-0" />
                 <a href="mailto:recauva@gmail.com" className="text-black hover:text-gray-900 transition-colors">
-                recauva@gmail.com
+                info@recauva.com
                 </a>
               </li>
             </ul>
