@@ -102,7 +102,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
       setIsSubmitting(true);
       
       try {
-        const response = await fetch('/api/aternative', {
+        const response = await fetch('/api/bookings', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

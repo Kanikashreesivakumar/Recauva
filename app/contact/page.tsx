@@ -158,8 +158,8 @@ export default function ContactPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">Email</h3>
                 <p className="text-black font-semibold">
-                  <a href="mailto:Recauva@gmail.com" className="hover:text-reccova-green transition-colors">
-                  Recauva@gmail.com
+                  <a href="mailto:recauva@gmail.com" className="hover:text-reccova-green transition-colors">
+                  info@recauva@gmail.com
                   </a>
                 </p>
               </div>

@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
         const testimonialsData: Testimonial[] = [
           {
             id: 1,
-            name: "Sarah Johnson",
+            name: "Sai Khishore",
             feedback:
               "Recauva's home physiotherapy services have been life-changing. After my knee surgery, their therapist came to my home and provided exceptional care. I'm now back to my normal activities!",
             rating: 5,
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 2,
-            name: "Michael Chen",
+            name: "Surya Nambyar",
             feedback:
               "As someone with chronic back pain, finding Recauva was a blessing. Their therapist designed a personalized program that has significantly reduced my pain. Highly recommended!",
             rating: 5,
@@ -40,7 +40,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 3,
-            name: "Emily Rodriguez",
+            name: "Ramachandhran",
             feedback:
               "The convenience of having professional physiotherapy at home is incredible. Recauva's therapists are knowledgeable, punctual, and truly care about your recovery.",
             rating: 4,
@@ -48,7 +48,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 4,
-            name: "David Wilson",
+            name: "Rajesh Kumar",
             feedback:
               "I was skeptical about home physiotherapy at first, but Recauva changed my mind. The therapist was professional, attentive, and helped me recover from my shoulder injury faster than expected.",
             rating: 5,
@@ -56,7 +56,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 5,
-            name: "Jennifer Lee",
+            name: "Shivani Patel",
             feedback:
               "After trying several physiotherapy clinics with little improvement, I decided to give Recauva  a try. The personalized attention and convenience of home sessions made all the difference. My mobility has improved significantly!",
             rating: 5,
@@ -64,7 +64,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 6,
-            name: "Robert Brown",
+            name: "Ravi B",
             feedback:
               "As a busy professional, finding time for physiotherapy was always a challenge. Recauva's flexible scheduling and home visits have been a game-changer. Great service and excellent results!",
             rating: 4,
@@ -72,7 +72,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 7,
-            name: "Maria Garcia",
+            name: "Mohammed Rizad",
             feedback:
               "My elderly mother needed physiotherapy but was unable to travel to clinics. Recauva's home service has been perfect for her needs. The therapist is patient, kind, and has helped her regain confidence in her mobility.",
             rating: 5,
@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
           },
           {
             id: 8,
-            name: "James Taylor",
+            name: "Nandhini R",
             feedback:
               "I've been using Recauva for sports injury rehabilitation for the past few months. The therapist's expertise in sports medicine has been invaluable in getting me back to my training routine safely.",
             rating: 5,

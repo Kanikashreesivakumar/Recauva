@@ -17,6 +17,6 @@ yarn-error.log*
 
 .vercel
 
-
+*.zip
 *.tsbuildinfo
 next-env.d.ts
