@@ -12,7 +12,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useToast } from "@/components/ui/use-toast"
 
-
 interface BookingModalProps {
   isOpen: boolean
   onClose: () => void
@@ -40,7 +39,6 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
 
-    
     if (errors[name]) {
       setErrors((prev) => {
         const newErrors = { ...prev }
@@ -104,7 +102,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
       setIsSubmitting(true);
       
       try {
-        const response = await fetch('/api/bookings', {
+        const response = await fetch('/api/aternative', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
