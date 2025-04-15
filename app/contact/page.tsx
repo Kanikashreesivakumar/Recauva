@@ -200,7 +200,7 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="your name"
                       className={`rounded-lg ${errors.name ? "border-red-500" : ""}`}
                     />
                     {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}

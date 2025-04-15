@@ -225,7 +225,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
-                          placeholder="John Doe"
+                          placeholder="your name"
                           className={`rounded-lg ${errors.name ? "border-red-500" : ""}`}
                         />
                         {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -242,7 +242,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                           type="email"
                           value={formData.email}
                           onChange={handleChange}
-                          placeholder="john@example.com"
+                          placeholder="your mail id "
                           className={`rounded-lg ${errors.email ? "border-red-500" : ""}`}
                         />
                         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -272,7 +272,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                           name="address"
                           value={formData.address}
                           onChange={handleChange}
-                          placeholder="123 Main St, City, State"
+                          placeholder="your address"
                           className={`rounded-lg ${errors.address ? "border-red-500" : ""}`}
                         />
                         {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
