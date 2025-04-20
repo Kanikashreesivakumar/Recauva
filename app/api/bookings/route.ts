@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     );
 
     await client.messages.create({
-      body: `New booking from ${body.name} for ${body.serviceType} on ${body.date} at ${body.time}\n contact: ${body.phone}\n message: ${body.message}`,
+      body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\n contact: ${body.phone}\n message: ${body.message}`,
       to: formattedPhone,
       from: process.env.TWILIO_PHONE_NUMBER!,
     });

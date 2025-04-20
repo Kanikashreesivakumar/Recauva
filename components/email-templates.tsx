@@ -15,7 +15,6 @@ export function BookingEmailTemplate({
   phone,
   serviceType,
   date,
-  time,
   message,
   isConfirmation
 }: BookingEmailProps) {

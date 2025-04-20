@@ -29,7 +29,6 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
     address: "",
     serviceType: serviceType,
     date: "",
-    time: "",
     message: "",
     isFirstTime: "yes",
   })
@@ -77,8 +76,6 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
     const newErrors: Record<string, string> = {}
 
     if (!formData.date.trim()) newErrors.date = "Date is required"
-    if (!formData.time.trim()) newErrors.time = "Time is required"
-
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -350,25 +347,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         {errors.date && <p className="text-red-500 text-sm mt-1">{errors.date}</p>}
                       </div>
 
-                      <div>
-                        <Label htmlFor="time">Preferred Time</Label>
-                        <div className="relative">
-                          <Input
-                            id="time"
-                            name="time"
-                            type="time"
-                            value={formData.time}
-                            onChange={handleChange}
-                            className={`pl-10 rounded-lg ${errors.time ? "border-red-500" : ""}`}
-                          />
-                          <Clock
-                            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-reccova-violet"
-                            size={16}
-                          />
-                        </div>
-                        {errors.time && <p className="text-red-500 text-sm mt-1">{errors.time}</p>}
-                      </div>
-
+                     
                       <div>
                         <Label htmlFor="message">Additional Information (Optional)</Label>
                         <Textarea
@@ -400,9 +379,9 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         <div className="flex">
                           <Calendar className="text-reccova-green mr-3 flex-shrink-0" size={18} />
                           <div>
-                            <p className="text-sm text-black">Date & Time</p>
+                            <p className="text-sm text-black">Date</p>
                             <p className="font-medium">
-                              {formData.date} at {formData.time}
+                              {formData.date}
                             </p>
                           </div>
                         </div>
