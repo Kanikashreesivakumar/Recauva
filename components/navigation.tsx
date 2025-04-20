@@ -82,7 +82,7 @@ export default function Navigation() {
               </Link>
             ))}
             <Button 
-              className="bg-gradient-to-r from-reccova-green via-reccova-darkGreen to-reccova-lightGreen hover:from-reccova-darkGreen hover:to-reccova-green text-white font-semibold rounded-full px-6 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5" 
+              className="bg-gradient-to-r  text-white font-semibold rounded-full px-6 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5" 
               onClick={() => setIsBookingModalOpen(true)}
             >
               <span className="text-black">Book Now</span>
@@ -142,7 +142,7 @@ export default function Navigation() {
                   </Link>
                 ))}
                 <Button
-                  className="btn-gradient text-white rounded-full w-full py-6"
+                  className="bg-gradient-to-r  text-white font-semibold rounded-full px-6 transition-all duration-300 shadow-md "
                   onClick={() => {
                     setIsMobileMenuOpen(false)
                     setIsBookingModalOpen(true)

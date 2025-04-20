@@ -180,7 +180,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                       <div
                         className={`flex items-center justify-center w-10 h-10 rounded-full mb-2 transition-colors ${
                           step === stepNumber
-                            ? "bg-gradient-to-r from-reccova-green to-reccova-mint text-white"
+                            ? "bg-reccova-green  text-black"
                             : step > stepNumber
                               ? "bg-reccova-green/20 text-reccova-green"
                               : "bg-gray-100 text-gray-400"
@@ -346,6 +346,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
                         {errors.date && <p className="text-red-500 text-sm mt-1">{errors.date}</p>}
                       </div>
 
+                     
                       <div>
                         <Label htmlFor="message">Additional Information (Optional)</Label>
                         <Textarea
