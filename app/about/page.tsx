@@ -12,46 +12,46 @@ import BookingModal from "@/components/booking-modal"
 
 const teamMembers = [
   {
-    name: "Dr. Sarah Johnson",
+    name: "Dr.Mukil vanan",
     role: "Lead Physiotherapist",
     specialty: "Post-Surgical Rehabilitation",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "Dr. Johnson specializes in post-surgical rehabilitation with over 15 years of experience helping patients recover from orthopedic surgeries. She has developed innovative recovery protocols that significantly reduce rehabilitation time.",
+    bio: "Dr.Mugil specializes in post-surgical rehabilitation with over 15 years of experience helping patients recover from orthopedic surgeries. She has developed innovative recovery protocols that significantly reduce rehabilitation time.",
   },
   {
-    name: "Dr. Michael Chen",
+    name: "Madhumitha",
     role: "Senior Physiotherapist",
     specialty: "Sports Injury & Performance",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "With a background in sports medicine, Dr. Chen has worked with professional athletes and developed specialized treatment programs for sports-related injuries. His approach combines rehabilitation with performance enhancement techniques.",
+    bio: "Madhumiths in sports medicine, Dr. Chen has worked with professional athletes and developed specialized treatment programs for sports-related injuries. His approach combines rehabilitation with performance enhancement techniques.",
   },
   {
-    name: "Emily Rodriguez",
+    name: "kavin",
     role: "Physiotherapist",
     specialty: "Geriatric Care & Mobility",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "Emily specializes in geriatric physiotherapy, focusing on improving mobility, preventing falls, and enhancing quality of life for older adults. She is certified in vestibular rehabilitation and balance training.",
+    bio: "kavin in geriatric physiotherapy, focusing on improving mobility, preventing falls, and enhancing quality of life for older adults. She is certified in vestibular rehabilitation and balance training.",
   },
   {
-    name: "Dr. James Wilson",
+    name: "Raghul",
     role: "Physiotherapist",
     specialty: "Neurological Rehabilitation",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "Dr. Wilson has dedicated his career to helping patients with neurological conditions such as stroke, Parkinson's disease, and multiple sclerosis. His evidence-based approach focuses on neuroplasticity and functional improvement.",
+    bio: "raghul has dedicated his career to helping patients with neurological conditions such as stroke, Parkinson's disease, and multiple sclerosis. His evidence-based approach focuses on neuroplasticity and functional improvement.",
   },
   {
-    name: "Lisa Thompson",
+    name: "Anupama",
     role: "Physiotherapist",
     specialty: "Pediatric Development",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "Lisa specializes in pediatric physiotherapy, helping children with developmental delays, congenital conditions, and injuries. Her playful approach makes therapy engaging and effective for young patients.",
+    bio: "anu in pediatric physiotherapy, helping children with developmental delays, congenital conditions, and injuries. Her playful approach makes therapy engaging and effective for young patients.",
   },
   {
-    name: "Robert Williams",
+    name: "Mohammed sahad",
     role: "Physiotherapist",
     specialty: "Chronic Pain Management",
     image: "/placeholder.svg?height=400&width=400",
-    bio: "Robert focuses on helping patients manage chronic pain conditions through a combination of manual therapy, therapeutic exercise, and education. He is certified in pain science and integrative pain management.",
+    bio: "sahad on helping patients manage chronic pain conditions through a combination of manual therapy, therapeutic exercise, and education. He is certified in pain science and integrative pain management.",
   },
 ]
 
