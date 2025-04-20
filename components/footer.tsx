@@ -140,7 +140,7 @@ export default function Footer() {
               {[
                 { href: "/privacy-policy", text: "Privacy Policy" },
                 { href: "/terms", text: "Terms of Service" },
-                { href: "/sitemap", text: "Sitemap" },
+
               ].map((link) => (
                 <Link
                   key={link.href}
