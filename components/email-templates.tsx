@@ -34,6 +34,7 @@ export function BookingEmailTemplate({
           {message && <li>Additional Notes: {message}</li>}
         </ul>
       </div>
+      <h2>{isConfirmation ? 'Please contact this number for your booking confirmation: +917418761589' : 'Contact details for booking confirmation has been given to customer'}</h2>
     </div>
   )
 }
@@ -72,6 +73,7 @@ export function bookingEmailHtml({
           ${message ? `<li>Additional Notes: ${message}</li>` : ''}
         </ul>
       </div>
+      <h2>${isConfirmation ? 'Please contact this number for your bookin confirmation: +917418761589' : 'Contact details for booking confirmation has been given to customer'}</h2>
     </div>
   `;
 }
