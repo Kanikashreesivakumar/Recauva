@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    // Send booking email to admin
+  
     try {
       await sgMail.send({
         to: process.env.ADMIN_EMAIL!,
@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       console.error('Admin email delivery failed:', error);
     }
 
-    // Send confirmation email to client
+   
     try {
       await sgMail.send({
         to: body.email,

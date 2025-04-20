@@ -81,8 +81,11 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <Button className="btn-gradient text-white rounded-full px-6" onClick={() => setIsBookingModalOpen(true)}>
-              Book Now
+            <Button 
+              className="bg-gradient-to-r from-reccova-green via-reccova-darkGreen to-reccova-lightGreen hover:from-reccova-darkGreen hover:to-reccova-green text-white font-semibold rounded-full px-6 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5" 
+              onClick={() => setIsBookingModalOpen(true)}
+            >
+              <span className="text-white">Book Now</span>
             </Button>
           </nav>
 
