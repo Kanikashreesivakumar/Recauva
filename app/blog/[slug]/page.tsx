@@ -437,7 +437,7 @@ Falls are a leading cause of injury among older adults, often leading to serious
 <h2>Empowering Seniors to Stay Independent</h2>
 <p>Fall prevention isn’t just about avoiding injuries — it’s about empowering older adults to live actively and independently with confidence. Through thoughtful planning, supportive environments, and guided physical activity, seniors can continue doing the things they love while staying safe.</p>
 
-<p>At Reccova, our geriatric care team specializes in personalized fall risk assessments, balance training, and mobility support for older adults. We're dedicated to helping seniors live securely and vibrantly, every step of the way.</p>
+<p>At Recauva, our geriatric care team specializes in personalized fall risk assessments, balance training, and mobility support for older adults. We're dedicated to helping seniors live securely and vibrantly, every step of the way.</p>
 `,
   image: "/walk.jpeg?height=600&width=1200",
   date: "January 18, 2023",

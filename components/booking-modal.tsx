@@ -163,7 +163,7 @@ export default function BookingModal({ isOpen, onClose, serviceType = "" }: Book
           >
             {}
             <div className="absolute top-0 right-0 w-40 h-40 bg-reccova-green/10 rounded-full blur-xl -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-reccova-violet/10 rounded-full blur-xl translate-y-1/2 -translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-40 h-40 bg-reccova-green/10 rounded-full blur-xl translate-y-1/2 -translate-x-1/2"></div>
 
             <div className="relative z-10">
               <div className="flex justify-between items-center p-6 border-b">

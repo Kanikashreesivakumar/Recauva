@@ -81,7 +81,7 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <Button className="btn-gradient text-white rounded-full px-6" onClick={() => setIsBookingModalOpen(true)}>
+            <Button className="btn-gradient bg-green  text-black rounded-full px-6" onClick={() => setIsBookingModalOpen(true)}>
               Book Now
             </Button>
           </nav>
