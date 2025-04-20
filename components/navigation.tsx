@@ -85,7 +85,7 @@ export default function Navigation() {
               className="bg-gradient-to-r from-reccova-green via-reccova-darkGreen to-reccova-lightGreen hover:from-reccova-darkGreen hover:to-reccova-green text-white font-semibold rounded-full px-6 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5" 
               onClick={() => setIsBookingModalOpen(true)}
             >
-              <span className="text-white">Book Now</span>
+              <span className="text-black">Book Now</span>
             </Button>
           </nav>
 
