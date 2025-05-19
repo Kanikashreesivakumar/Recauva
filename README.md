@@ -14,12 +14,6 @@ Welcome to **Reccova**, a dynamic and beautifully animated physiotherapy website
 -  **Service Pages:** Interactive sections with detailed physiotherapy service information.
 -  **User Navigation:** Clear, fast-loading UI with intelligent routing and active state transitions.
 
----
 
-##  Tech Stack
-
-| Frontend | Backend | Hosting | Styling | Auth & DB |
-|----------|---------|---------|---------|-----------|
-| React (via v0.dev) | Supabase | Vercel | Tailwind CSS | Supabase Auth |
 
 
