@@ -1,4 +1,4 @@
- ## Reccova - Official Physiotherapy Website
+ ## Recauva - Official Physiotherapy Website
 
 Welcome to **Reccova**, a dynamic and beautifully animated physiotherapy website designed to offer seamless service booking, medical information, and patient engagement with a soothing user experience.
 
