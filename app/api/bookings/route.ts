@@ -33,10 +33,18 @@ export async function POST(request: Request) {
       process.env.TWILIO_AUTH_TOKEN
     );
 
+    // sms
     await client.messages.create({
       body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\n contact: ${body.phone}\n message: ${body.message}`,
       to: formattedPhone,
       from: process.env.TWILIO_PHONE_NUMBER!,
+    });
+
+    // whatsapp 
+    await client.messages.create({
+      body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\nContact: ${body.phone}\nMessage: ${body.message}`,
+      to: `whatsapp:${formattedPhone}`,
+      from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER!}`,
     });
 
     return NextResponse.json({ 
