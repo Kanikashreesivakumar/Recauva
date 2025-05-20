@@ -40,11 +40,27 @@ export async function POST(request: Request) {
       from: process.env.TWILIO_PHONE_NUMBER!,
     });
 
-    // whatsapp 
-    await client.messages.create({
-      body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\nContact: ${body.phone}\nMessage: ${body.message}`,
-      to: `whatsapp:${formattedPhone}`,
-      from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER!}`,
+    //  // whatsapp 
+    // await client.messages.create({
+    //   body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\nContact: ${body.phone}\nMessage: ${body.message}`,
+    //   to: `whatsapp:${formattedPhone}`,
+    //   from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER!}`,
+    // });
+
+
+    // whatsapp via UltraMsg
+    await fetch(`https://api.ultramsg.com/${process.env.ULTRAMSG_INSTANCE_ID}/messages/chat`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        token: process.env.ULTRAMSG_TOKEN,
+        to: formattedPhone.replace('+', ''), // UltraMsg expects phone without +
+        body: `New booking from ${body.name} for ${body.serviceType} on ${body.date}\nContact: ${body.phone}\nMessage: ${body.message}`,
+        priority: 10,
+        referenceId: `booking-${Date.now()}`
+      })
     });
 
     return NextResponse.json({ 
